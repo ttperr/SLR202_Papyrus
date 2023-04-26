@@ -67,10 +67,6 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_dFHgENYaEe2kktxydelO0w" name="BankEmployee"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_KQ9awORCEe2hBOEMZEgbLg" name="Object">
-      <packagedElement xmi:type="uml:Package" xmi:id="_MgzWcORCEe2hBOEMZEgbLg" name="Actors">
-        <packagedElement xmi:type="uml:Actor" xmi:id="_d9qEUORBEe2hBOEMZEgbLg" name="BankCustomer"/>
-      </packagedElement>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_KQ9awORCEe2hBOEMZEgbLg" name="Object"/>
   </packagedElement>
 </uml:Model>
