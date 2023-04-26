@@ -1,15 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_dJhJ0NYYEe2kktxydelO0w" name="perrot-tristan">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_dJhJ0NYYEe2kktxydelO0w" name="perrot-tristan">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_dKmH4NYYEe2kktxydelO0w">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
   <packagedElement xmi:type="uml:Package" xmi:id="_B5ZgMNYbEe2kktxydelO0w" name="ATM-Package">
-    <packagedElement xmi:type="uml:Class" xmi:id="_3GgQQNYYEe2kktxydelO0w" name="ATM"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_4ZpTINYYEe2kktxydelO0w" name="CardHolder"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_8gRKQNYYEe2kktxydelO0w" name="BankingSystem"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_9qOb8NYYEe2kktxydelO0w" name="AuthSystem"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_IpMD4NYZEe2kktxydelO0w" name="MaintenanceOperator"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_dFHgENYaEe2kktxydelO0w" name="TellerBankCustomer"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_JsHIoOQ_Ee2hBOEMZEgbLg" name="Assocation Edges">
+      <packagedElement xmi:type="uml:Association" xmi:id="_T7Su4OQ-Ee2hBOEMZEgbLg" memberEnd="_T7Su4-Q-Ee2hBOEMZEgbLg _T7TV8OQ-Ee2hBOEMZEgbLg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_T7Su4eQ-Ee2hBOEMZEgbLg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_T7Su4uQ-Ee2hBOEMZEgbLg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_T7Su4-Q-Ee2hBOEMZEgbLg" name="bankcustomer" type="_4ZpTINYYEe2kktxydelO0w" association="_T7Su4OQ-Ee2hBOEMZEgbLg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yTuF4OQ-Ee2hBOEMZEgbLg"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_T7TV8OQ-Ee2hBOEMZEgbLg" name="bankingcard" type="_8gRKQNYYEe2kktxydelO0w" association="_T7Su4OQ-Ee2hBOEMZEgbLg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_YZ62UOQ-Ee2hBOEMZEgbLg" memberEnd="_YZ7dYuQ-Ee2hBOEMZEgbLg _YZ7dY-Q-Ee2hBOEMZEgbLg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YZ7dYOQ-Ee2hBOEMZEgbLg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YZ7dYeQ-Ee2hBOEMZEgbLg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_YZ7dYuQ-Ee2hBOEMZEgbLg" name="atm" type="_3GgQQNYYEe2kktxydelO0w" association="_YZ62UOQ-Ee2hBOEMZEgbLg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oWkgQOQ-Ee2hBOEMZEgbLg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qu_wMOQ-Ee2hBOEMZEgbLg" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_YZ7dY-Q-Ee2hBOEMZEgbLg" name="bankingcard" type="_8gRKQNYYEe2kktxydelO0w" association="_YZ62UOQ-Ee2hBOEMZEgbLg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rJzc4OQ-Ee2hBOEMZEgbLg"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_lVdfsOQ-Ee2hBOEMZEgbLg" memberEnd="_lVdfs-Q-Ee2hBOEMZEgbLg _lVdftOQ-Ee2hBOEMZEgbLg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lVdfseQ-Ee2hBOEMZEgbLg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lVdfsuQ-Ee2hBOEMZEgbLg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_lVdfs-Q-Ee2hBOEMZEgbLg" name="bankcustomer" type="_4ZpTINYYEe2kktxydelO0w" association="_lVdfsOQ-Ee2hBOEMZEgbLg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nN7dMOQ-Ee2hBOEMZEgbLg" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_lVdftOQ-Ee2hBOEMZEgbLg" name="atm" type="_3GgQQNYYEe2kktxydelO0w" association="_lVdfsOQ-Ee2hBOEMZEgbLg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_54eQwOQ-Ee2hBOEMZEgbLg" memberEnd="_54eQw-Q-Ee2hBOEMZEgbLg _54e30OQ-Ee2hBOEMZEgbLg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_54eQweQ-Ee2hBOEMZEgbLg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_54eQwuQ-Ee2hBOEMZEgbLg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_54eQw-Q-Ee2hBOEMZEgbLg" name="filleremployee" type="_dFHgENYaEe2kktxydelO0w" association="_54eQwOQ-Ee2hBOEMZEgbLg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-PZ0wOQ-Ee2hBOEMZEgbLg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Pkz4OQ-Ee2hBOEMZEgbLg" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_54e30OQ-Ee2hBOEMZEgbLg" name="atm" type="_3GgQQNYYEe2kktxydelO0w" association="_54eQwOQ-Ee2hBOEMZEgbLg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__gcl4OQ-Ee2hBOEMZEgbLg"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_AztkkOQ_Ee2hBOEMZEgbLg" memberEnd="_AzuLouQ_Ee2hBOEMZEgbLg _AzuLo-Q_Ee2hBOEMZEgbLg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AzuLoOQ_Ee2hBOEMZEgbLg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AzuLoeQ_Ee2hBOEMZEgbLg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_AzuLouQ_Ee2hBOEMZEgbLg" name="atm" type="_3GgQQNYYEe2kktxydelO0w" association="_AztkkOQ_Ee2hBOEMZEgbLg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CtPSAOQ_Ee2hBOEMZEgbLg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CtqIwOQ_Ee2hBOEMZEgbLg" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_AzuLo-Q_Ee2hBOEMZEgbLg" name="authsystem" type="_9qOb8NYYEe2kktxydelO0w" association="_AztkkOQ_Ee2hBOEMZEgbLg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_hAJ24OQ_Ee2hBOEMZEgbLg" name="ATM Classes">
+      <packagedElement xmi:type="uml:Class" xmi:id="_3GgQQNYYEe2kktxydelO0w" name="ATM"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4ZpTINYYEe2kktxydelO0w" name="BankCustomer"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8gRKQNYYEe2kktxydelO0w" name="BankingCard"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9qOb8NYYEe2kktxydelO0w" name="AuthSystem"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dFHgENYaEe2kktxydelO0w" name="FillerEmployee"/>
+    </packagedElement>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_0TEdQNbyEe2_vdHoxDe_Xg"/>
 </uml:Model>
