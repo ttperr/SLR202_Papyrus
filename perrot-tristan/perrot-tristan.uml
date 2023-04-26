@@ -58,6 +58,16 @@
           </ownedEnd>
           <ownedEnd xmi:type="uml:Property" xmi:id="_AzuLo-Q_Ee2hBOEMZEgbLg" name="authSystem" type="_9qOb8NYYEe2kktxydelO0w" association="_AztkkOQ_Ee2hBOEMZEgbLg"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_2i5B8ORzEe2F6M0fPxiN5A" memberEnd="_2i96cORzEe2F6M0fPxiN5A _2jUfwORzEe2F6M0fPxiN5A" navigableOwnedEnd="_2i96cORzEe2F6M0fPxiN5A">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2i8FQORzEe2F6M0fPxiN5A" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2i8FQeRzEe2F6M0fPxiN5A" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_2jUfwORzEe2F6M0fPxiN5A" name="bank" type="_zdglYORzEe2F6M0fPxiN5A" association="_2i5B8ORzEe2F6M0fPxiN5A"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_2i96cORzEe2F6M0fPxiN5A" name="atm" type="_3GgQQNYYEe2kktxydelO0w" aggregation="shared" association="_2i5B8ORzEe2F6M0fPxiN5A">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2jKHsORzEe2F6M0fPxiN5A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2jOZIORzEe2F6M0fPxiN5A" value="*"/>
+          </ownedEnd>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_hAJ24OQ_Ee2hBOEMZEgbLg" name="ATM Classes">
         <packagedElement xmi:type="uml:Class" xmi:id="_3GgQQNYYEe2kktxydelO0w" name="ATM"/>
@@ -65,8 +75,76 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_8gRKQNYYEe2kktxydelO0w" name="BankingCard"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_9qOb8NYYEe2kktxydelO0w" name="AuthSystem"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_dFHgENYaEe2kktxydelO0w" name="BankEmployee"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zdglYORzEe2F6M0fPxiN5A" name="Bank"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_KQ9awORCEe2hBOEMZEgbLg" name="Object"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_KQ9awORCEe2hBOEMZEgbLg" name="Object">
+      <packagedElement xmi:type="uml:Package" xmi:id="_cCG1cOR0Ee2F6M0fPxiN5A" name="Instanciation">
+        <packagedElement xmi:type="uml:Package" xmi:id="_n7HOUOR1Ee2F6M0fPxiN5A" name="Class">
+          <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_F0upwORzEe2F6M0fPxiN5A" name="bankCustomer" classifier="_4ZpTINYYEe2kktxydelO0w"/>
+          <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_YMsfkORzEe2F6M0fPxiN5A" name="atm" classifier="_3GgQQNYYEe2kktxydelO0w"/>
+          <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_bk5xgORzEe2F6M0fPxiN5A" name="bankingCard" classifier="_8gRKQNYYEe2kktxydelO0w"/>
+          <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_gu6YQORzEe2F6M0fPxiN5A" name="authSystem" classifier="_9qOb8NYYEe2kktxydelO0w"/>
+          <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_59nm8OR0Ee2F6M0fPxiN5A" name="bank" classifier="_zdglYORzEe2F6M0fPxiN5A"/>
+          <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_WmVeYOR2Ee2F6M0fPxiN5A" name="bankEmployee" classifier="_dFHgENYaEe2kktxydelO0w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_szTFQOR1Ee2F6M0fPxiN5A" name="Links">
+          <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_EVmucOR1Ee2F6M0fPxiN5A" name="A_atm_bank" classifier="_2i5B8ORzEe2F6M0fPxiN5A">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EwvLQOR1Ee2F6M0fPxiN5A" source="InstanceEnd" references="_YMsfkORzEe2F6M0fPxiN5A _59nm8OR0Ee2F6M0fPxiN5A"/>
+            <slot xmi:type="uml:Slot" xmi:id="_EwvyUOR1Ee2F6M0fPxiN5A" definingFeature="_2i96cORzEe2F6M0fPxiN5A">
+              <value xmi:type="uml:InstanceValue" xmi:id="_EwxAcOR1Ee2F6M0fPxiN5A" name="InstanceValue0" type="_3GgQQNYYEe2kktxydelO0w" instance="_YMsfkORzEe2F6M0fPxiN5A"/>
+            </slot>
+            <slot xmi:type="uml:Slot" xmi:id="_EwyOkOR1Ee2F6M0fPxiN5A" definingFeature="_2jUfwORzEe2F6M0fPxiN5A">
+              <value xmi:type="uml:InstanceValue" xmi:id="_EwyOkeR1Ee2F6M0fPxiN5A" name="InstanceValue0" type="_zdglYORzEe2F6M0fPxiN5A" instance="_59nm8OR0Ee2F6M0fPxiN5A"/>
+            </slot>
+          </packagedElement>
+          <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_Fn1LUOR1Ee2F6M0fPxiN5A" name="A_atm_bankingCard" classifier="_YZ62UOQ-Ee2hBOEMZEgbLg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_F-QHQOR1Ee2F6M0fPxiN5A" source="InstanceEnd" references="_YMsfkORzEe2F6M0fPxiN5A _bk5xgORzEe2F6M0fPxiN5A"/>
+            <slot xmi:type="uml:Slot" xmi:id="_F-QHQeR1Ee2F6M0fPxiN5A" definingFeature="_YZ7dYuQ-Ee2hBOEMZEgbLg">
+              <value xmi:type="uml:InstanceValue" xmi:id="_F-QuUOR1Ee2F6M0fPxiN5A" name="InstanceValue0" type="_3GgQQNYYEe2kktxydelO0w" instance="_YMsfkORzEe2F6M0fPxiN5A"/>
+            </slot>
+            <slot xmi:type="uml:Slot" xmi:id="_F-QuUeR1Ee2F6M0fPxiN5A" definingFeature="_YZ7dY-Q-Ee2hBOEMZEgbLg">
+              <value xmi:type="uml:InstanceValue" xmi:id="_F-QuUuR1Ee2F6M0fPxiN5A" name="InstanceValue0" type="_8gRKQNYYEe2kktxydelO0w" instance="_bk5xgORzEe2F6M0fPxiN5A"/>
+            </slot>
+          </packagedElement>
+          <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_Gt7QsOR1Ee2F6M0fPxiN5A" name="A_bankCustomer_bankingCard" classifier="_T7Su4OQ-Ee2hBOEMZEgbLg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HF4dsOR1Ee2F6M0fPxiN5A" source="InstanceEnd" references="_F0upwORzEe2F6M0fPxiN5A _bk5xgORzEe2F6M0fPxiN5A"/>
+            <slot xmi:type="uml:Slot" xmi:id="_HF5EwOR1Ee2F6M0fPxiN5A" definingFeature="_T7Su4-Q-Ee2hBOEMZEgbLg">
+              <value xmi:type="uml:InstanceValue" xmi:id="_HF5EweR1Ee2F6M0fPxiN5A" name="InstanceValue0" type="_4ZpTINYYEe2kktxydelO0w" instance="_F0upwORzEe2F6M0fPxiN5A"/>
+            </slot>
+            <slot xmi:type="uml:Slot" xmi:id="_HF5r0OR1Ee2F6M0fPxiN5A" definingFeature="_T7TV8OQ-Ee2hBOEMZEgbLg">
+              <value xmi:type="uml:InstanceValue" xmi:id="_HF5r0eR1Ee2F6M0fPxiN5A" name="InstanceValue0" type="_8gRKQNYYEe2kktxydelO0w" instance="_bk5xgORzEe2F6M0fPxiN5A"/>
+            </slot>
+          </packagedElement>
+          <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_IvjKMOR1Ee2F6M0fPxiN5A" name="A_bankCustomer_atm" classifier="_lVdfsOQ-Ee2hBOEMZEgbLg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JJBaIOR1Ee2F6M0fPxiN5A" source="InstanceEnd" references="_F0upwORzEe2F6M0fPxiN5A _YMsfkORzEe2F6M0fPxiN5A"/>
+            <slot xmi:type="uml:Slot" xmi:id="_JJBaIeR1Ee2F6M0fPxiN5A" definingFeature="_lVdfs-Q-Ee2hBOEMZEgbLg">
+              <value xmi:type="uml:InstanceValue" xmi:id="_JJCBMOR1Ee2F6M0fPxiN5A" name="InstanceValue0" type="_4ZpTINYYEe2kktxydelO0w" instance="_F0upwORzEe2F6M0fPxiN5A"/>
+            </slot>
+            <slot xmi:type="uml:Slot" xmi:id="_JJCBMeR1Ee2F6M0fPxiN5A" definingFeature="_lVdftOQ-Ee2hBOEMZEgbLg">
+              <value xmi:type="uml:InstanceValue" xmi:id="_JJCoQOR1Ee2F6M0fPxiN5A" name="InstanceValue0" type="_3GgQQNYYEe2kktxydelO0w" instance="_YMsfkORzEe2F6M0fPxiN5A"/>
+            </slot>
+          </packagedElement>
+          <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_JvhZcOR1Ee2F6M0fPxiN5A" name="A_atm_authSystem" classifier="_AztkkOQ_Ee2hBOEMZEgbLg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KF0ZkOR1Ee2F6M0fPxiN5A" source="InstanceEnd" references="_YMsfkORzEe2F6M0fPxiN5A _gu6YQORzEe2F6M0fPxiN5A"/>
+            <slot xmi:type="uml:Slot" xmi:id="_KF0ZkeR1Ee2F6M0fPxiN5A" definingFeature="_AzuLouQ_Ee2hBOEMZEgbLg">
+              <value xmi:type="uml:InstanceValue" xmi:id="_KF0ZkuR1Ee2F6M0fPxiN5A" name="InstanceValue0" type="_3GgQQNYYEe2kktxydelO0w" instance="_YMsfkORzEe2F6M0fPxiN5A"/>
+            </slot>
+            <slot xmi:type="uml:Slot" xmi:id="_KF1AoOR1Ee2F6M0fPxiN5A" definingFeature="_AzuLo-Q_Ee2hBOEMZEgbLg">
+              <value xmi:type="uml:InstanceValue" xmi:id="_KF1AoeR1Ee2F6M0fPxiN5A" name="InstanceValue0" type="_9qOb8NYYEe2kktxydelO0w" instance="_gu6YQORzEe2F6M0fPxiN5A"/>
+            </slot>
+          </packagedElement>
+          <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_amtjkOR2Ee2F6M0fPxiN5A" name="A_bankEmployee_atm" classifier="_54eQwOQ-Ee2hBOEMZEgbLg">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a6pMMOR2Ee2F6M0fPxiN5A" source="InstanceEnd" references="_WmVeYOR2Ee2F6M0fPxiN5A _YMsfkORzEe2F6M0fPxiN5A"/>
+            <slot xmi:type="uml:Slot" xmi:id="_a6pMMeR2Ee2F6M0fPxiN5A" definingFeature="_54eQw-Q-Ee2hBOEMZEgbLg">
+              <value xmi:type="uml:InstanceValue" xmi:id="_a6pMMuR2Ee2F6M0fPxiN5A" name="InstanceValue0" type="_dFHgENYaEe2kktxydelO0w" instance="_WmVeYOR2Ee2F6M0fPxiN5A"/>
+            </slot>
+            <slot xmi:type="uml:Slot" xmi:id="_a6pzQOR2Ee2F6M0fPxiN5A" definingFeature="_54e30OQ-Ee2hBOEMZEgbLg">
+              <value xmi:type="uml:InstanceValue" xmi:id="_a6pzQeR2Ee2F6M0fPxiN5A" name="InstanceValue0" type="_3GgQQNYYEe2kktxydelO0w" instance="_YMsfkORzEe2F6M0fPxiN5A"/>
+            </slot>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
