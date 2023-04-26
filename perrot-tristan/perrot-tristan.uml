@@ -10,18 +10,17 @@
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_T7Su4eQ-Ee2hBOEMZEgbLg" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_T7Su4uQ-Ee2hBOEMZEgbLg" key="nature" value="UML_Nature"/>
           </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_T7Su4-Q-Ee2hBOEMZEgbLg" name="bankCustomer" type="_4ZpTINYYEe2kktxydelO0w" association="_T7Su4OQ-Ee2hBOEMZEgbLg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yTuF4OQ-Ee2hBOEMZEgbLg"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_T7Su4-Q-Ee2hBOEMZEgbLg" name="bankCustomer" type="_4ZpTINYYEe2kktxydelO0w" association="_T7Su4OQ-Ee2hBOEMZEgbLg"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_T7TV8OQ-Ee2hBOEMZEgbLg" name="bankingCard" type="_8gRKQNYYEe2kktxydelO0w" association="_T7Su4OQ-Ee2hBOEMZEgbLg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T2IhQORuEe2F6M0fPxiN5A" value="*"/>
           </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_T7TV8OQ-Ee2hBOEMZEgbLg" name="bankingCard" type="_8gRKQNYYEe2kktxydelO0w" association="_T7Su4OQ-Ee2hBOEMZEgbLg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_YZ62UOQ-Ee2hBOEMZEgbLg" memberEnd="_YZ7dYuQ-Ee2hBOEMZEgbLg _YZ7dY-Q-Ee2hBOEMZEgbLg">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YZ7dYOQ-Ee2hBOEMZEgbLg" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YZ7dYeQ-Ee2hBOEMZEgbLg" key="nature" value="UML_Nature"/>
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_YZ7dYuQ-Ee2hBOEMZEgbLg" name="atm" type="_3GgQQNYYEe2kktxydelO0w" association="_YZ62UOQ-Ee2hBOEMZEgbLg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oWkgQOQ-Ee2hBOEMZEgbLg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qu_wMOQ-Ee2hBOEMZEgbLg" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xjOKUORwEe2F6M0fPxiN5A"/>
           </ownedEnd>
           <ownedEnd xmi:type="uml:Property" xmi:id="_YZ7dY-Q-Ee2hBOEMZEgbLg" name="bankingCard" type="_8gRKQNYYEe2kktxydelO0w" association="_YZ62UOQ-Ee2hBOEMZEgbLg">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rJzc4OQ-Ee2hBOEMZEgbLg"/>
@@ -32,9 +31,11 @@
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lVdfsuQ-Ee2hBOEMZEgbLg" key="nature" value="UML_Nature"/>
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_lVdfs-Q-Ee2hBOEMZEgbLg" name="bankCustomer" type="_4ZpTINYYEe2kktxydelO0w" association="_lVdfsOQ-Ee2hBOEMZEgbLg">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nN7dMOQ-Ee2hBOEMZEgbLg" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LpHVIORxEe2F6M0fPxiN5A"/>
           </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_lVdftOQ-Ee2hBOEMZEgbLg" name="atm" type="_3GgQQNYYEe2kktxydelO0w" association="_lVdfsOQ-Ee2hBOEMZEgbLg"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_lVdftOQ-Ee2hBOEMZEgbLg" name="atm" type="_3GgQQNYYEe2kktxydelO0w" association="_lVdfsOQ-Ee2hBOEMZEgbLg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vVOowORwEe2F6M0fPxiN5A"/>
+          </ownedEnd>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_54eQwOQ-Ee2hBOEMZEgbLg" memberEnd="_54eQw-Q-Ee2hBOEMZEgbLg _54e30OQ-Ee2hBOEMZEgbLg">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_54eQweQ-Ee2hBOEMZEgbLg" source="org.eclipse.papyrus">
@@ -42,7 +43,6 @@
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_54eQw-Q-Ee2hBOEMZEgbLg" name="bankEmployee" type="_dFHgENYaEe2kktxydelO0w" association="_54eQwOQ-Ee2hBOEMZEgbLg">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-PZ0wOQ-Ee2hBOEMZEgbLg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Pkz4OQ-Ee2hBOEMZEgbLg" value="*"/>
           </ownedEnd>
           <ownedEnd xmi:type="uml:Property" xmi:id="_54e30OQ-Ee2hBOEMZEgbLg" name="atm" type="_3GgQQNYYEe2kktxydelO0w" association="_54eQwOQ-Ee2hBOEMZEgbLg">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__gcl4OQ-Ee2hBOEMZEgbLg"/>
@@ -65,6 +65,13 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_8gRKQNYYEe2kktxydelO0w" name="BankingCard"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_9qOb8NYYEe2kktxydelO0w" name="AuthSystem"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_dFHgENYaEe2kktxydelO0w" name="BankEmployee"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interaction" xmi:id="_qhfCYORvEe2F6M0fPxiN5A" name="Interaction3">
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_rRzsEORvEe2F6M0fPxiN5A" name="customer" coveredBy="_uS--EORvEe2F6M0fPxiN5A"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_tgE6cORvEe2F6M0fPxiN5A" name="Lifeline2" coveredBy="_uS_lIORvEe2F6M0fPxiN5A"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uS--EORvEe2F6M0fPxiN5A" name="Message3SendEvent" covered="_rRzsEORvEe2F6M0fPxiN5A" message="_uSz-8ORvEe2F6M0fPxiN5A"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uS_lIORvEe2F6M0fPxiN5A" name="Message3ReceiveEvent" covered="_tgE6cORvEe2F6M0fPxiN5A" message="_uSz-8ORvEe2F6M0fPxiN5A"/>
+        <message xmi:type="uml:Message" xmi:id="_uSz-8ORvEe2F6M0fPxiN5A" name="Message3" messageSort="createMessage" receiveEvent="_uS_lIORvEe2F6M0fPxiN5A" sendEvent="_uS--EORvEe2F6M0fPxiN5A"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_KQ9awORCEe2hBOEMZEgbLg" name="Object"/>
