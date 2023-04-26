@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_dJhJ0NYYEe2kktxydelO0w" name="perrot-tristan">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_BkIlAOR4Ee2F6M0fPxiN5A" annotatedElement="_4ZpTINYYEe2kktxydelO0w">
+    <body>The bank customer can have one or multiple banking card. It can withdraw or deposit cash on his bank account with it.</body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_Hd_e4OR5Ee2F6M0fPxiN5A" annotatedElement="_dFHgENYaEe2kktxydelO0w">
+    <body>The bank employee is the employee who is in charge to refill the atm when it's empty&#xD;
+.</body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_YoFMUOR5Ee2F6M0fPxiN5A" annotatedElement="_8gRKQNYYEe2kktxydelO0w">
+    <body>The banking card is the card who is necessary for withdraw or deposit cash. It's hold by a bank customer.</body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_qFmMEOR5Ee2F6M0fPxiN5A" annotatedElement="_zdglYORzEe2F6M0fPxiN5A">
+    <body>The bank is the system who is accepting or not the transactions of money or showing the balance of the bank account. Each ATM needs a bank.</body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_JbYjMOR6Ee2F6M0fPxiN5A" annotatedElement="_9qOb8NYYEe2kktxydelO0w">
+    <body>The authorization system is the system who validate or note the pin code entered by the bank customer on the atm. Every ATM needs a authorization system.</body>
+  </ownedComment>
   <packageImport xmi:type="uml:PackageImport" xmi:id="_dKmH4NYYEe2kktxydelO0w">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
@@ -48,11 +64,11 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__gcl4OQ-Ee2hBOEMZEgbLg"/>
           </ownedEnd>
         </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_AztkkOQ_Ee2hBOEMZEgbLg" memberEnd="_AzuLouQ_Ee2hBOEMZEgbLg _AzuLo-Q_Ee2hBOEMZEgbLg">
+        <packagedElement xmi:type="uml:Association" xmi:id="_AztkkOQ_Ee2hBOEMZEgbLg" memberEnd="_AzuLouQ_Ee2hBOEMZEgbLg _AzuLo-Q_Ee2hBOEMZEgbLg" navigableOwnedEnd="_AzuLouQ_Ee2hBOEMZEgbLg">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AzuLoOQ_Ee2hBOEMZEgbLg" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AzuLoeQ_Ee2hBOEMZEgbLg" key="nature" value="UML_Nature"/>
           </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_AzuLouQ_Ee2hBOEMZEgbLg" name="atm" type="_3GgQQNYYEe2kktxydelO0w" association="_AztkkOQ_Ee2hBOEMZEgbLg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_AzuLouQ_Ee2hBOEMZEgbLg" name="atm" type="_3GgQQNYYEe2kktxydelO0w" aggregation="shared" association="_AztkkOQ_Ee2hBOEMZEgbLg">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CtPSAOQ_Ee2hBOEMZEgbLg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CtqIwOQ_Ee2hBOEMZEgbLg" value="*"/>
           </ownedEnd>
