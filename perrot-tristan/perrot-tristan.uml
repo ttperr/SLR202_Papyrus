@@ -6,12 +6,12 @@
   <packagedElement xmi:type="uml:Package" xmi:id="_B5ZgMNYbEe2kktxydelO0w" name="ATM-Package">
     <packagedElement xmi:type="uml:Package" xmi:id="_HiwIEORCEe2hBOEMZEgbLg" name="Class">
       <packagedElement xmi:type="uml:Package" xmi:id="_JsHIoOQ_Ee2hBOEMZEgbLg" name="Assocation Edges">
-        <packagedElement xmi:type="uml:Association" xmi:id="_T7Su4OQ-Ee2hBOEMZEgbLg" memberEnd="_T7Su4-Q-Ee2hBOEMZEgbLg _T7TV8OQ-Ee2hBOEMZEgbLg">
+        <packagedElement xmi:type="uml:Association" xmi:id="_T7Su4OQ-Ee2hBOEMZEgbLg" memberEnd="_T7Su4-Q-Ee2hBOEMZEgbLg _T7TV8OQ-Ee2hBOEMZEgbLg" navigableOwnedEnd="_T7TV8OQ-Ee2hBOEMZEgbLg">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_T7Su4eQ-Ee2hBOEMZEgbLg" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_T7Su4uQ-Ee2hBOEMZEgbLg" key="nature" value="UML_Nature"/>
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_T7Su4-Q-Ee2hBOEMZEgbLg" name="bankCustomer" type="_4ZpTINYYEe2kktxydelO0w" association="_T7Su4OQ-Ee2hBOEMZEgbLg"/>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_T7TV8OQ-Ee2hBOEMZEgbLg" name="bankingCard" type="_8gRKQNYYEe2kktxydelO0w" association="_T7Su4OQ-Ee2hBOEMZEgbLg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_T7TV8OQ-Ee2hBOEMZEgbLg" name="bankingCard" type="_8gRKQNYYEe2kktxydelO0w" aggregation="shared" association="_T7Su4OQ-Ee2hBOEMZEgbLg">
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T2IhQORuEe2F6M0fPxiN5A" value="*"/>
           </ownedEnd>
         </packagedElement>
@@ -65,13 +65,6 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_8gRKQNYYEe2kktxydelO0w" name="BankingCard"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_9qOb8NYYEe2kktxydelO0w" name="AuthSystem"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_dFHgENYaEe2kktxydelO0w" name="BankEmployee"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Interaction" xmi:id="_qhfCYORvEe2F6M0fPxiN5A" name="Interaction3">
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_rRzsEORvEe2F6M0fPxiN5A" name="customer" coveredBy="_uS--EORvEe2F6M0fPxiN5A"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_tgE6cORvEe2F6M0fPxiN5A" name="Lifeline2" coveredBy="_uS_lIORvEe2F6M0fPxiN5A"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uS--EORvEe2F6M0fPxiN5A" name="Message3SendEvent" covered="_rRzsEORvEe2F6M0fPxiN5A" message="_uSz-8ORvEe2F6M0fPxiN5A"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uS_lIORvEe2F6M0fPxiN5A" name="Message3ReceiveEvent" covered="_tgE6cORvEe2F6M0fPxiN5A" message="_uSz-8ORvEe2F6M0fPxiN5A"/>
-        <message xmi:type="uml:Message" xmi:id="_uSz-8ORvEe2F6M0fPxiN5A" name="Message3" messageSort="createMessage" receiveEvent="_uS_lIORvEe2F6M0fPxiN5A" sendEvent="_uS--EORvEe2F6M0fPxiN5A"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_KQ9awORCEe2hBOEMZEgbLg" name="Object"/>
