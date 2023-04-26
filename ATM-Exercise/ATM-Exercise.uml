@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_QJrJwL8jEe2PH78EJQ2P9g" name="ATM-Exercise">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_QMsokL8jEe2PH78EJQ2P9g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_BGdz0L8kEe2PH78EJQ2P9g" name="ATM-Package">
+    <packagedElement xmi:type="uml:Package" xmi:id="_FG7YkL8kEe2PH78EJQ2P9g" name="ATM-Use-Cases">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_PL9u4L8kEe2PH78EJQ2P9g" name="WithdrawCash" subject="_Zh780L8nEe2PH78EJQ2P9g"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_SdUK4L8kEe2PH78EJQ2P9g" memberEnd="_SdWnIL8kEe2PH78EJQ2P9g _SdXOML8kEe2PH78EJQ2P9g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SdVZAL8kEe2PH78EJQ2P9g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SdWAEL8kEe2PH78EJQ2P9g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_SdWnIL8kEe2PH78EJQ2P9g" name="withdrawcash" type="_PL9u4L8kEe2PH78EJQ2P9g" association="_SdUK4L8kEe2PH78EJQ2P9g"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_SdXOML8kEe2PH78EJQ2P9g" name="cardholder" type="_Jkz5IL8kEe2PH78EJQ2P9g" association="_SdUK4L8kEe2PH78EJQ2P9g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_TVAA0L8kEe2PH78EJQ2P9g" memberEnd="_TVAn4b8kEe2PH78EJQ2P9g _TVAn4r8kEe2PH78EJQ2P9g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TVAA0b8kEe2PH78EJQ2P9g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TVAn4L8kEe2PH78EJQ2P9g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_TVAn4b8kEe2PH78EJQ2P9g" name="withdrawcash" type="_PL9u4L8kEe2PH78EJQ2P9g" association="_TVAA0L8kEe2PH78EJQ2P9g"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_TVAn4r8kEe2PH78EJQ2P9g" name="authorizationsystem" type="_LzQGoL8kEe2PH78EJQ2P9g" association="_TVAA0L8kEe2PH78EJQ2P9g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interaction" xmi:id="_Zh780L8nEe2PH78EJQ2P9g" name="Withdraw-Cash-Interaction" visibility="package" useCase="_PL9u4L8kEe2PH78EJQ2P9g">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_qTSaIL8nEe2PH78EJQ2P9g" name="cardHolder" type="_DYKUML8lEe2PH78EJQ2P9g"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_6uUCIL8nEe2PH78EJQ2P9g" name="authoriztionSys" type="_BFwMsL8lEe2PH78EJQ2P9g"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_7hP68L8nEe2PH78EJQ2P9g" name="atm" type="_2s4UYL8kEe2PH78EJQ2P9g"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_qTRzEL8nEe2PH78EJQ2P9g" name="" represents="_qTSaIL8nEe2PH78EJQ2P9g" coveredBy="_xXSPEL8sEe2xPbONDLs_dg _xX220b8sEe2xPbONDLs_dg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_6uTbEL8nEe2PH78EJQ2P9g" name="" represents="_6uUCIL8nEe2PH78EJQ2P9g"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_7hPT4L8nEe2PH78EJQ2P9g" name="" represents="_7hP68L8nEe2PH78EJQ2P9g" coveredBy="_xXSPEb8sEe2xPbONDLs_dg _xX220L8sEe2xPbONDLs_dg _xXwwML8sEe2xPbONDLs_dg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xXSPEL8sEe2xPbONDLs_dg" name="Message7SendEvent" covered="_qTRzEL8nEe2PH78EJQ2P9g" message="_xXPLwL8sEe2xPbONDLs_dg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xXSPEb8sEe2xPbONDLs_dg" name="Message7ReceiveEvent" covered="_7hPT4L8nEe2PH78EJQ2P9g" message="_xXPLwL8sEe2xPbONDLs_dg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_xXwwML8sEe2xPbONDLs_dg" name="BehaviorExecutionSpecification10" covered="_7hPT4L8nEe2PH78EJQ2P9g" finish="_xX220L8sEe2xPbONDLs_dg" start="_xXSPEb8sEe2xPbONDLs_dg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xX220L8sEe2xPbONDLs_dg" name="Message12SendEvent" covered="_7hPT4L8nEe2PH78EJQ2P9g" message="_xX0akL8sEe2xPbONDLs_dg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xX220b8sEe2xPbONDLs_dg" name="Message12ReceiveEvent" covered="_qTRzEL8nEe2PH78EJQ2P9g" message="_xX0akL8sEe2xPbONDLs_dg"/>
+        <message xmi:type="uml:Message" xmi:id="_xXPLwL8sEe2xPbONDLs_dg" name="Message7" receiveEvent="_xXSPEb8sEe2xPbONDLs_dg" sendEvent="_xXSPEL8sEe2xPbONDLs_dg" signature="_4ybK8L8sEe2xPbONDLs_dg"/>
+        <message xmi:type="uml:Message" xmi:id="_xX0akL8sEe2xPbONDLs_dg" name="Message12" messageSort="reply" receiveEvent="_xX220b8sEe2xPbONDLs_dg" sendEvent="_xX220L8sEe2xPbONDLs_dg" signature="_4ybK8L8sEe2xPbONDLs_dg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Jkz5IL8kEe2PH78EJQ2P9g" name="CardHolder"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_LzQGoL8kEe2PH78EJQ2P9g" name="AuthorizationSystem"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_zQ4uoL8kEe2PH78EJQ2P9g" name="ATM-Classes">
+      <packagedElement xmi:type="uml:Class" xmi:id="_2s4UYL8kEe2PH78EJQ2P9g" name="ATM">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_4ybK8L8sEe2xPbONDLs_dg" name="receiveCard">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_QkJ6wL8tEe2xPbONDLs_dg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_BFwMsL8lEe2PH78EJQ2P9g" name="AuthorizationSystem"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DYKUML8lEe2PH78EJQ2P9g" name="CardHolder"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_1UK1AL8kEe2PH78EJQ2P9g" name="ATM-Objects-Normal-Operation">
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_cjTuAL8lEe2PH78EJQ2P9g" name="atm" classifier="_2s4UYL8kEe2PH78EJQ2P9g">
+        <slot xmi:type="uml:Slot" xmi:id="_NT6gwb8nEe2PH78EJQ2P9g" definingFeature="__ROpIr8mEe2PH78EJQ2P9g">
+          <value xmi:type="uml:InstanceValue" xmi:id="_NT6gwr8nEe2PH78EJQ2P9g" name="InstanceValue0" type="_DYKUML8lEe2PH78EJQ2P9g" instance="_z3xdkL8mEe2PH78EJQ2P9g"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_t0g6oL8mEe2PH78EJQ2P9g" name="authSystem" classifier="_BFwMsL8lEe2PH78EJQ2P9g"/>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_z3xdkL8mEe2PH78EJQ2P9g" name="cardHolder" classifier="_DYKUML8lEe2PH78EJQ2P9g"/>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_J7IAAL8nEe2PH78EJQ2P9g" name="InstanceSpecification8" classifier="_6SzAQL8mEe2PH78EJQ2P9g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MGBxUL8nEe2PH78EJQ2P9g" source="InstanceEnd" references="_t0g6oL8mEe2PH78EJQ2P9g _cjTuAL8lEe2PH78EJQ2P9g"/>
+        <slot xmi:type="uml:Slot" xmi:id="_MGBxUb8nEe2PH78EJQ2P9g" definingFeature="_6SznUr8mEe2PH78EJQ2P9g">
+          <value xmi:type="uml:InstanceValue" xmi:id="_MGC_cL8nEe2PH78EJQ2P9g" name="InstanceValue0" type="_BFwMsL8lEe2PH78EJQ2P9g" instance="_t0g6oL8mEe2PH78EJQ2P9g"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_MGC_cb8nEe2PH78EJQ2P9g" definingFeature="_6S0OYL8mEe2PH78EJQ2P9g">
+          <value xmi:type="uml:InstanceValue" xmi:id="_MGC_cr8nEe2PH78EJQ2P9g" name="InstanceValue0" type="_2s4UYL8kEe2PH78EJQ2P9g" instance="_cjTuAL8lEe2PH78EJQ2P9g"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_M0eLsL8nEe2PH78EJQ2P9g" name="InstanceSpecification9" classifier="__ROCEL8mEe2PH78EJQ2P9g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NT6gwL8nEe2PH78EJQ2P9g" source="InstanceEnd" references="_z3xdkL8mEe2PH78EJQ2P9g _cjTuAL8lEe2PH78EJQ2P9g"/>
+        <slot xmi:type="uml:Slot" xmi:id="_NT6gw78nEe2PH78EJQ2P9g" definingFeature="__ROpI78mEe2PH78EJQ2P9g">
+          <value xmi:type="uml:InstanceValue" xmi:id="_NT6gxL8nEe2PH78EJQ2P9g" name="InstanceValue0" type="_2s4UYL8kEe2PH78EJQ2P9g" instance="_cjTuAL8lEe2PH78EJQ2P9g"/>
+        </slot>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_6SzAQL8mEe2PH78EJQ2P9g" memberEnd="_6SznUr8mEe2PH78EJQ2P9g _6S0OYL8mEe2PH78EJQ2P9g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6SznUL8mEe2PH78EJQ2P9g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6SznUb8mEe2PH78EJQ2P9g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_6SznUr8mEe2PH78EJQ2P9g" name="authorizationsystem" type="_BFwMsL8lEe2PH78EJQ2P9g" association="_6SzAQL8mEe2PH78EJQ2P9g"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_6S0OYL8mEe2PH78EJQ2P9g" name="atm" type="_2s4UYL8kEe2PH78EJQ2P9g" association="_6SzAQL8mEe2PH78EJQ2P9g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="__ROCEL8mEe2PH78EJQ2P9g" memberEnd="__ROpIr8mEe2PH78EJQ2P9g __ROpI78mEe2PH78EJQ2P9g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__ROpIL8mEe2PH78EJQ2P9g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__ROpIb8mEe2PH78EJQ2P9g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="__ROpI78mEe2PH78EJQ2P9g" name="atm" type="_2s4UYL8kEe2PH78EJQ2P9g" association="__ROCEL8mEe2PH78EJQ2P9g">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IF91ML8nEe2PH78EJQ2P9g" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="__ROpIr8mEe2PH78EJQ2P9g" name="cardholder" type="_DYKUML8lEe2PH78EJQ2P9g" aggregation="composite" association="__ROCEL8mEe2PH78EJQ2P9g">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FenYcL8nEe2PH78EJQ2P9g" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
