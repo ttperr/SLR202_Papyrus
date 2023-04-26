@@ -95,6 +95,20 @@
           <body>The authorization system is the system who validate or note the pin code entered by the bank customer on the atm. Every ATM needs a authorization system.</body>
         </ownedComment>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_VEDAsOSAEe2F6M0fPxiN5A" name="Monitered Variables">
+        <packagedElement xmi:type="uml:Class" xmi:id="_SQdCQOSBEe2F6M0fPxiN5A" name="CardData"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_VjxNIOSBEe2F6M0fPxiN5A" name="Account"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ax1NcOSBEe2F6M0fPxiN5A" name="CodeEntered"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eYIlwOSBEe2F6M0fPxiN5A" name="AmountRequested"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_n4tZkOSAEe2F6M0fPxiN5A" name="Controlled Variables">
+        <packagedElement xmi:type="uml:Class" xmi:id="_E8U5wOSBEe2F6M0fPxiN5A" name="MoneyStock"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_9MiHEOSBEe2F6M0fPxiN5A" name="WithdrawAuth"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_OICl8OSCEe2F6M0fPxiN5A" name="BalanceReq"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_kZgc4OSCEe2F6M0fPxiN5A" name="IsAuthorized"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LnPnsOSDEe2F6M0fPxiN5A" name="WithdrawReq"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Z09qoOSDEe2F6M0fPxiN5A" name="CashRefill"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_KQ9awORCEe2hBOEMZEgbLg" name="Object">
       <packagedElement xmi:type="uml:Package" xmi:id="_cCG1cOR0Ee2F6M0fPxiN5A" name="Instanciation">
