@@ -350,6 +350,10 @@
         <message xmi:type="uml:Message" xmi:id="_ugQVQOVEEe2fBK9yvp1XcA" name="isAuthorized" receiveEvent="_ugSKceVEEe2fBK9yvp1XcA" sendEvent="_ugSKcOVEEe2fBK9yvp1XcA" signature="_EHC3gOVFEe2fBK9yvp1XcA"/>
         <message xmi:type="uml:Message" xmi:id="_ugx5sOVEEe2fBK9yvp1XcA" name="isAuthorized" messageSort="reply" receiveEvent="_ugygweVEEe2fBK9yvp1XcA" sendEvent="_ugygwOVEEe2fBK9yvp1XcA"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Interaction" xmi:id="_TWJawOVMEe2fBK9yvp1XcA" name="WrongPin">
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_g6DEoOVMEe2fBK9yvp1XcA" name="cardHolder" represents="_ElsOQOU4Ee2fBK9yvp1XcA"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_kFMyAOVMEe2fBK9yvp1XcA" name="atm" represents="_V_UMgOU4Ee2fBK9yvp1XcA"/>
+      </packagedElement>
     </packagedElement>
   </packagedElement>
 </uml:Model>

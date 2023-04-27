@@ -1289,4 +1289,30 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ug1kEeVEEe2fBK9yvp1XcA" id="(0.5,0.8440860215053764)"/>
     </edges>
   </notation:Diagram>
+  <notation:Diagram xmi:id="_VbUXgOVMEe2fBK9yvp1XcA" type="PapyrusUMLSequenceDiagram" name="ATM-Sequence-Diagram-WrongPin" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_VbUXgeVMEe2fBK9yvp1XcA" type="Interaction_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_VbUXguVMEe2fBK9yvp1XcA" type="Interaction_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_VbUXg-VMEe2fBK9yvp1XcA" type="Interaction_SubfragmentCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_g6E50OVMEe2fBK9yvp1XcA" type="Lifeline_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_g6E50uVMEe2fBK9yvp1XcA" type="Lifeline_NameLabel"/>
+          <element xmi:type="uml:Lifeline" href="perrot-tristan.uml#_g6DEoOVMEe2fBK9yvp1XcA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g6E50eVMEe2fBK9yvp1XcA" x="34" y="10" width="160"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_kFOnMOVMEe2fBK9yvp1XcA" type="Lifeline_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_kFOnMuVMEe2fBK9yvp1XcA" type="Lifeline_NameLabel"/>
+          <element xmi:type="uml:Lifeline" href="perrot-tristan.uml#_kFMyAOVMEe2fBK9yvp1XcA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kFOnMeVMEe2fBK9yvp1XcA" x="294" y="10" width="121"/>
+        </children>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VbUXhOVMEe2fBK9yvp1XcA"/>
+      </children>
+      <element xmi:type="uml:Interaction" href="perrot-tristan.uml#_TWJawOVMEe2fBK9yvp1XcA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VbUXheVMEe2fBK9yvp1XcA"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_VbUXhuVMEe2fBK9yvp1XcA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_VbUXh-VMEe2fBK9yvp1XcA"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_VbUXiOVMEe2fBK9yvp1XcA" diagramKindId="org.eclipse.papyrus.uml.diagram.sequence">
+      <owner xmi:type="uml:Package" href="perrot-tristan.uml#_dk56UOU3Ee2fBK9yvp1XcA"/>
+    </styles>
+    <element xmi:type="uml:Interaction" href="perrot-tristan.uml#_TWJawOVMEe2fBK9yvp1XcA"/>
+  </notation:Diagram>
 </xmi:XMI>
