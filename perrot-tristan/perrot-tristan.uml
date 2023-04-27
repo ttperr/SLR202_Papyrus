@@ -15,17 +15,6 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T2IhQORuEe2F6M0fPxiN5A" value="*"/>
           </ownedEnd>
         </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_YZ62UOQ-Ee2hBOEMZEgbLg" memberEnd="_YZ7dYuQ-Ee2hBOEMZEgbLg _YZ7dY-Q-Ee2hBOEMZEgbLg">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YZ7dYOQ-Ee2hBOEMZEgbLg" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YZ7dYeQ-Ee2hBOEMZEgbLg" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_YZ7dYuQ-Ee2hBOEMZEgbLg" name="atm" type="_3GgQQNYYEe2kktxydelO0w" association="_YZ62UOQ-Ee2hBOEMZEgbLg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xjOKUORwEe2F6M0fPxiN5A"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_YZ7dY-Q-Ee2hBOEMZEgbLg" name="bankingCard" type="_8gRKQNYYEe2kktxydelO0w" association="_YZ62UOQ-Ee2hBOEMZEgbLg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rJzc4OQ-Ee2hBOEMZEgbLg"/>
-          </ownedEnd>
-        </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_lVdfsOQ-Ee2hBOEMZEgbLg" memberEnd="_lVdfs-Q-Ee2hBOEMZEgbLg _lVdftOQ-Ee2hBOEMZEgbLg">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lVdfseQ-Ee2hBOEMZEgbLg" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lVdfsuQ-Ee2hBOEMZEgbLg" key="nature" value="UML_Nature"/>
@@ -70,10 +59,55 @@
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_hAJ24OQ_Ee2hBOEMZEgbLg" name="ATM Classes">
-        <packagedElement xmi:type="uml:Class" xmi:id="_3GgQQNYYEe2kktxydelO0w" name="ATM"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_4ZpTINYYEe2kktxydelO0w" name="CardHolder"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3GgQQNYYEe2kktxydelO0w" name="ATM">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ElsOQOU4Ee2fBK9yvp1XcA" name="cardHolder" visibility="private" type="_4ZpTINYYEe2kktxydelO0w"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_syhvgOVBEe2fBK9yvp1XcA" name="cardData" visibility="private" type="_SQdCQOSBEe2F6M0fPxiN5A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5D1fMOU4Ee2fBK9yvp1XcA" name="authSystem" visibility="private" type="_9qOb8NYYEe2kktxydelO0w"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_H6bgAOU5Ee2fBK9yvp1XcA" name="insertCard">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_H6bgAeU5Ee2fBK9yvp1XcA" name="card" type="_SQdCQOSBEe2F6M0fPxiN5A"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_GJVD4OU7Ee2fBK9yvp1XcA" name="isValidCard" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_KmHQ4OU-Ee2fBK9yvp1XcA" name="enterPinCode">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_KmHQ4eU-Ee2fBK9yvp1XcA" name="pinCode" type="_ax1NcOSBEe2F6M0fPxiN5A"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_KmHQ4uU-Ee2fBK9yvp1XcA" name="pinOk" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_draxAOVCEe2fBK9yvp1XcA" name="requestAmount">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_draxAeVCEe2fBK9yvp1XcA" name="transactionOk" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_lVsVEOVCEe2fBK9yvp1XcA" name="amount" type="_eYIlwOSBEe2F6M0fPxiN5A"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Wc-X4OVDEe2fBK9yvp1XcA" name="checkProperCard" visibility="private">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Wc-X4eVDEe2fBK9yvp1XcA" name="card" type="_SQdCQOSBEe2F6M0fPxiN5A"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Wc-X4uVDEe2fBK9yvp1XcA" name="isProperCard" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_8Yfs4OVDEe2fBK9yvp1XcA" name="checkPinCode" visibility="private">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_8Yfs4eVDEe2fBK9yvp1XcA" name="pinCode" type="_ax1NcOSBEe2F6M0fPxiN5A"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_8Yfs4uVDEe2fBK9yvp1XcA" name="pinOk" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_4ZpTINYYEe2kktxydelO0w" name="CardHolder">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_V_UMgOU4Ee2fBK9yvp1XcA" name="atm" visibility="private" type="_3GgQQNYYEe2kktxydelO0w"/>
+          <nestedClassifier xmi:type="uml:Signal" xmi:id="_pThugOVAEe2fBK9yvp1XcA" name="requestPinCode"/>
+        </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_8gRKQNYYEe2kktxydelO0w" name="BankingCard"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_9qOb8NYYEe2kktxydelO0w" name="AuthSystem"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_9qOb8NYYEe2kktxydelO0w" name="AuthSystem">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_EHC3gOVFEe2fBK9yvp1XcA" name="isAuthorized">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_EHC3geVFEe2fBK9yvp1XcA" name="amount" type="_eYIlwOSBEe2F6M0fPxiN5A"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_EHC3guVFEe2fBK9yvp1XcA" name="cardData" type="_SQdCQOSBEe2F6M0fPxiN5A"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_EHC3g-VFEe2fBK9yvp1XcA" name="isAuthorized" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_dFHgENYaEe2kktxydelO0w" name="BankEmployee"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_zdglYORzEe2F6M0fPxiN5A" name="Bank"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_GJJqgOSHEe2F6M0fPxiN5A" name="BankCustomer">
@@ -92,10 +126,10 @@
           <body>The banking card is the card who is necessary for withdraw or deposit cash. It's hold by a bank customer.</body>
         </ownedComment>
         <ownedComment xmi:type="uml:Comment" xmi:id="_qFmMEOR5Ee2F6M0fPxiN5A" annotatedElement="_zdglYORzEe2F6M0fPxiN5A">
-          <body>The bank is the system who is accepting or not the transactions of money or showing the balance of the bank account. Each ATM needs a bank.</body>
+          <body>The bank is the system who is managing the amount of money of the bank account. Each ATM needs a bank.</body>
         </ownedComment>
         <ownedComment xmi:type="uml:Comment" xmi:id="_JbYjMOR6Ee2F6M0fPxiN5A" annotatedElement="_9qOb8NYYEe2kktxydelO0w">
-          <body>The authorization system is the system who validate or note the pin code entered by the bank customer on the atm. Every ATM needs a authorization system.</body>
+          <body>The authorization system is the system who authorizes or not the transactions. Every ATM needs a authorization system.</body>
         </ownedComment>
         <ownedComment xmi:type="uml:Comment" xmi:id="_IK_mcOSHEe2F6M0fPxiN5A" annotatedElement="_GJJqgOSHEe2F6M0fPxiN5A">
           <body>The bank customer is a card holder but with a bank account from the same bank of the ATM.</body>
@@ -105,7 +139,7 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_SQdCQOSBEe2F6M0fPxiN5A" name="CardData"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_VjxNIOSBEe2F6M0fPxiN5A" name="Account"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_ax1NcOSBEe2F6M0fPxiN5A" name="CodeEntered"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_eYIlwOSBEe2F6M0fPxiN5A" name="AmountRequested"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eYIlwOSBEe2F6M0fPxiN5A" name="Amount"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_n4tZkOSAEe2F6M0fPxiN5A" name="Controlled Variables">
         <packagedElement xmi:type="uml:Class" xmi:id="_E8U5wOSBEe2F6M0fPxiN5A" name="MoneyStock"/>
@@ -135,15 +169,6 @@
             </slot>
             <slot xmi:type="uml:Slot" xmi:id="_EwyOkOR1Ee2F6M0fPxiN5A" definingFeature="_2jUfwORzEe2F6M0fPxiN5A">
               <value xmi:type="uml:InstanceValue" xmi:id="_EwyOkeR1Ee2F6M0fPxiN5A" name="InstanceValue0" type="_zdglYORzEe2F6M0fPxiN5A" instance="_59nm8OR0Ee2F6M0fPxiN5A"/>
-            </slot>
-          </packagedElement>
-          <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_Fn1LUOR1Ee2F6M0fPxiN5A" name="A_atm_bankingCard" classifier="_YZ62UOQ-Ee2hBOEMZEgbLg">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_F-QHQOR1Ee2F6M0fPxiN5A" source="InstanceEnd" references="_YMsfkORzEe2F6M0fPxiN5A _bk5xgORzEe2F6M0fPxiN5A"/>
-            <slot xmi:type="uml:Slot" xmi:id="_F-QHQeR1Ee2F6M0fPxiN5A" definingFeature="_YZ7dYuQ-Ee2hBOEMZEgbLg">
-              <value xmi:type="uml:InstanceValue" xmi:id="_F-QuUOR1Ee2F6M0fPxiN5A" name="InstanceValue0" type="_3GgQQNYYEe2kktxydelO0w" instance="_YMsfkORzEe2F6M0fPxiN5A"/>
-            </slot>
-            <slot xmi:type="uml:Slot" xmi:id="_F-QuUeR1Ee2F6M0fPxiN5A" definingFeature="_YZ7dY-Q-Ee2hBOEMZEgbLg">
-              <value xmi:type="uml:InstanceValue" xmi:id="_F-QuUuR1Ee2F6M0fPxiN5A" name="InstanceValue0" type="_8gRKQNYYEe2kktxydelO0w" instance="_bk5xgORzEe2F6M0fPxiN5A"/>
             </slot>
           </packagedElement>
           <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_Gt7QsOR1Ee2F6M0fPxiN5A" name="A_bankCustomer_bankingCard" classifier="_T7Su4OQ-Ee2hBOEMZEgbLg">
@@ -283,6 +308,47 @@
         <packagedElement xmi:type="uml:UseCase" xmi:id="_JpKGMOSKEe2F6M0fPxiN5A" name="DepositCash">
           <generalization xmi:type="uml:Generalization" xmi:id="_LB0iQOSKEe2F6M0fPxiN5A" general="_RJaIYOSGEe2F6M0fPxiN5A"/>
         </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_dk56UOU3Ee2fBK9yvp1XcA" name="Sequence">
+      <packagedElement xmi:type="uml:Interaction" xmi:id="_fTQSgOU3Ee2fBK9yvp1XcA" name="Nominal Scenario">
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_-PQQoOU3Ee2fBK9yvp1XcA" name="cardHolder" represents="_ElsOQOU4Ee2fBK9yvp1XcA" coveredBy="_Zej6keU4Ee2fBK9yvp1XcA _Zf5-aOU4Ee2fBK9yvp1XcA _FXY0IeU8Ee2fBK9yvp1XcA _FX1gHOU8Ee2fBK9yvp1XcA _RfJBYOVCEe2fBK9yvp1XcA _RfxTgOVCEe2fBK9yvp1XcA"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_P3UTgOU4Ee2fBK9yvp1XcA" name="atm" represents="_V_UMgOU4Ee2fBK9yvp1XcA" coveredBy="_Zej6kuU4Ee2fBK9yvp1XcA _ty81QOVCEe2fBK9yvp1XcA _ty9cUOVCEe2fBK9yvp1XcA _Zf5-Z-U4Ee2fBK9yvp1XcA _FXY0IuU8Ee2fBK9yvp1XcA _v_pg4OVDEe2fBK9yvp1XcA _v_qH8OVDEe2fBK9yvp1XcA _FX1gG-U8Ee2fBK9yvp1XcA _RfJocOVCEe2fBK9yvp1XcA _ugSKcOVEEe2fBK9yvp1XcA _ugygweVEEe2fBK9yvp1XcA _RfwscOVCEe2fBK9yvp1XcA _Zf5-YOU4Ee2fBK9yvp1XcA _FX1gFOU8Ee2fBK9yvp1XcA _Rfrz8OVCEe2fBK9yvp1XcA"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_n8cgcOU4Ee2fBK9yvp1XcA" name="authSystem" represents="_5D1fMOU4Ee2fBK9yvp1XcA" coveredBy="_ugSKceVEEe2fBK9yvp1XcA _ugygwOVEEe2fBK9yvp1XcA _uguPUOVEEe2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Zej6keU4Ee2fBK9yvp1XcA" name="Message3SendEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_Zej6kOU4Ee2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Zej6kuU4Ee2fBK9yvp1XcA" name="Message3ReceiveEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_Zej6kOU4Ee2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Zf5-YOU4Ee2fBK9yvp1XcA" name="checkProperCard" covered="_P3UTgOU4Ee2fBK9yvp1XcA" finish="_Zf5-Z-U4Ee2fBK9yvp1XcA" start="_Zej6kuU4Ee2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ty81QOVCEe2fBK9yvp1XcA" name="Message25SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_ty8OMOVCEe2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ty9cUOVCEe2fBK9yvp1XcA" name="Message25ReceiveEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_ty8OMOVCEe2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Zf5-Z-U4Ee2fBK9yvp1XcA" name="Message8SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_Zf5-ZuU4Ee2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Zf5-aOU4Ee2fBK9yvp1XcA" name="Message8ReceiveEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_Zf5-ZuU4Ee2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FXY0IeU8Ee2fBK9yvp1XcA" name="Message18SendEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_FXY0IOU8Ee2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FXY0IuU8Ee2fBK9yvp1XcA" name="Message18ReceiveEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_FXY0IOU8Ee2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_FX1gFOU8Ee2fBK9yvp1XcA" name="BehaviorExecutionSpecification21" covered="_P3UTgOU4Ee2fBK9yvp1XcA" finish="_FX1gG-U8Ee2fBK9yvp1XcA" start="_FXY0IuU8Ee2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_v_pg4OVDEe2fBK9yvp1XcA" name="Message28SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_v_oSwOVDEe2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_v_qH8OVDEe2fBK9yvp1XcA" name="Message28ReceiveEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_v_oSwOVDEe2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FX1gG-U8Ee2fBK9yvp1XcA" name="Message23SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_FX1gGuU8Ee2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FX1gHOU8Ee2fBK9yvp1XcA" name="Message23ReceiveEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_FX1gGuU8Ee2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RfJBYOVCEe2fBK9yvp1XcA" name="Message18SendEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_RfHzQOVCEe2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RfJocOVCEe2fBK9yvp1XcA" name="Message18ReceiveEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_RfHzQOVCEe2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Rfrz8OVCEe2fBK9yvp1XcA" name="BehaviorExecutionSpecification21" covered="_P3UTgOU4Ee2fBK9yvp1XcA" finish="_RfwscOVCEe2fBK9yvp1XcA" start="_RfJocOVCEe2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ugSKcOVEEe2fBK9yvp1XcA" name="Message31SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_ugQVQOVEEe2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ugSKceVEEe2fBK9yvp1XcA" name="Message31ReceiveEvent" covered="_n8cgcOU4Ee2fBK9yvp1XcA" message="_ugQVQOVEEe2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_uguPUOVEEe2fBK9yvp1XcA" name="BehaviorExecutionSpecification34" covered="_n8cgcOU4Ee2fBK9yvp1XcA" finish="_ugygwOVEEe2fBK9yvp1XcA" start="_ugSKceVEEe2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ugygwOVEEe2fBK9yvp1XcA" name="Message36SendEvent" covered="_n8cgcOU4Ee2fBK9yvp1XcA" message="_ugx5sOVEEe2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ugygweVEEe2fBK9yvp1XcA" name="Message36ReceiveEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_ugx5sOVEEe2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RfwscOVCEe2fBK9yvp1XcA" name="Message23SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_RfwFYOVCEe2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RfxTgOVCEe2fBK9yvp1XcA" name="Message23ReceiveEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_RfwFYOVCEe2fBK9yvp1XcA"/>
+        <message xmi:type="uml:Message" xmi:id="_Zej6kOU4Ee2fBK9yvp1XcA" name="insertCard" receiveEvent="_Zej6kuU4Ee2fBK9yvp1XcA" sendEvent="_Zej6keU4Ee2fBK9yvp1XcA" signature="_H6bgAOU5Ee2fBK9yvp1XcA"/>
+        <message xmi:type="uml:Message" xmi:id="_Zf5-ZuU4Ee2fBK9yvp1XcA" name="requestPinCode" messageSort="reply" receiveEvent="_Zf5-aOU4Ee2fBK9yvp1XcA" sendEvent="_Zf5-Z-U4Ee2fBK9yvp1XcA" signature="_pThugOVAEe2fBK9yvp1XcA"/>
+        <message xmi:type="uml:Message" xmi:id="_FXY0IOU8Ee2fBK9yvp1XcA" name="enterPinCode" receiveEvent="_FXY0IuU8Ee2fBK9yvp1XcA" sendEvent="_FXY0IeU8Ee2fBK9yvp1XcA" signature="_KmHQ4OU-Ee2fBK9yvp1XcA"/>
+        <message xmi:type="uml:Message" xmi:id="_FX1gGuU8Ee2fBK9yvp1XcA" name="pinOk" messageSort="reply" receiveEvent="_FX1gHOU8Ee2fBK9yvp1XcA" sendEvent="_FX1gG-U8Ee2fBK9yvp1XcA"/>
+        <message xmi:type="uml:Message" xmi:id="_RfHzQOVCEe2fBK9yvp1XcA" name="amountRequest" receiveEvent="_RfJocOVCEe2fBK9yvp1XcA" sendEvent="_RfJBYOVCEe2fBK9yvp1XcA" signature="_draxAOVCEe2fBK9yvp1XcA"/>
+        <message xmi:type="uml:Message" xmi:id="_RfwFYOVCEe2fBK9yvp1XcA" name="transactionOk" messageSort="reply" receiveEvent="_RfxTgOVCEe2fBK9yvp1XcA" sendEvent="_RfwscOVCEe2fBK9yvp1XcA"/>
+        <message xmi:type="uml:Message" xmi:id="_ty8OMOVCEe2fBK9yvp1XcA" name="checkProperCard" receiveEvent="_ty9cUOVCEe2fBK9yvp1XcA" sendEvent="_ty81QOVCEe2fBK9yvp1XcA" signature="_Wc-X4OVDEe2fBK9yvp1XcA"/>
+        <message xmi:type="uml:Message" xmi:id="_v_oSwOVDEe2fBK9yvp1XcA" name="checkPinCode" receiveEvent="_v_qH8OVDEe2fBK9yvp1XcA" sendEvent="_v_pg4OVDEe2fBK9yvp1XcA" signature="_8Yfs4OVDEe2fBK9yvp1XcA"/>
+        <message xmi:type="uml:Message" xmi:id="_ugQVQOVEEe2fBK9yvp1XcA" name="isAuthorized" receiveEvent="_ugSKceVEEe2fBK9yvp1XcA" sendEvent="_ugSKcOVEEe2fBK9yvp1XcA" signature="_EHC3gOVFEe2fBK9yvp1XcA"/>
+        <message xmi:type="uml:Message" xmi:id="_ugx5sOVEEe2fBK9yvp1XcA" name="isAuthorized" messageSort="reply" receiveEvent="_ugygweVEEe2fBK9yvp1XcA" sendEvent="_ugygwOVEEe2fBK9yvp1XcA"/>
       </packagedElement>
     </packagedElement>
   </packagedElement>
