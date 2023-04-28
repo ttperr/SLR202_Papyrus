@@ -84,6 +84,18 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4ZuLpNYYEe2kktxydelO0w"/>
       </children>
       <children xmi:type="notation:BasicCompartment" xmi:id="_4ZuLpdYYEe2kktxydelO0w" type="Class_NestedClassifierCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_at-LYOXlEe2DIag9zYdMDQ" type="Signal_ClassNestedClassifierLabel">
+          <element xmi:type="uml:Signal" href="perrot-tristan.uml#_pThugOVAEe2fBK9yvp1XcA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_at-LYeXlEe2DIag9zYdMDQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_gC5BoOXlEe2DIag9zYdMDQ" type="Signal_ClassNestedClassifierLabel">
+          <element xmi:type="uml:Signal" href="perrot-tristan.uml#_YVa_oOXlEe2DIag9zYdMDQ"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_gC5BoeXlEe2DIag9zYdMDQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_gs95YOXlEe2DIag9zYdMDQ" type="Signal_ClassNestedClassifierLabel">
+          <element xmi:type="uml:Signal" href="perrot-tristan.uml#_B3Mb4OXhEe2g08i1xpN1qw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_gs95YeXlEe2DIag9zYdMDQ"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_4ZuLptYYEe2kktxydelO0w"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_4ZuLp9YYEe2kktxydelO0w"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_4ZuLqNYYEe2kktxydelO0w"/>
@@ -1104,10 +1116,60 @@
     <children xmi:type="notation:Shape" xmi:id="_g3Y-weU3Ee2fBK9yvp1XcA" type="Interaction_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_g3Y-wuU3Ee2fBK9yvp1XcA" type="Interaction_NameLabel"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_g3Y-w-U3Ee2fBK9yvp1XcA" type="Interaction_SubfragmentCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_UIDZkOXgEe2g08i1xpN1qw" type="CombinedFragment_Shape">
+          <children xmi:type="notation:BasicCompartment" xmi:id="_UIDZkuXgEe2g08i1xpN1qw" type="CombinedFragment_SubfragmentCompartment">
+            <children xmi:type="notation:Shape" xmi:id="_WWiDUOXgEe2g08i1xpN1qw" type="InteractionOperand_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_WWiqYOXgEe2g08i1xpN1qw" type="InteractionOperand_Guard">
+                <element xmi:type="uml:InteractionConstraint" href="perrot-tristan.uml#_WWUA4OXgEe2g08i1xpN1qw"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WWiqYeXgEe2g08i1xpN1qw" x="5" y="5"/>
+              </children>
+              <element xmi:type="uml:InteractionOperand" href="perrot-tristan.uml#_WWSywOXgEe2g08i1xpN1qw"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WWiDUeXgEe2g08i1xpN1qw" width="541" height="72"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_UIDZluXgEe2g08i1xpN1qw" type="InteractionOperand_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_UIDZmOXgEe2g08i1xpN1qw" type="InteractionOperand_Guard">
+                <element xmi:type="uml:InteractionConstraint" href="perrot-tristan.uml#_UH2lQeXgEe2g08i1xpN1qw"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UIDZmeXgEe2g08i1xpN1qw" x="5" y="5"/>
+              </children>
+              <element xmi:type="uml:InteractionOperand" href="perrot-tristan.uml#_UH2lQOXgEe2g08i1xpN1qw"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UIDZl-XgEe2g08i1xpN1qw" y="72" width="541" height="68"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_UIDZk-XgEe2g08i1xpN1qw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_UIDZlOXgEe2g08i1xpN1qw"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UIDZleXgEe2g08i1xpN1qw"/>
+          </children>
+          <element xmi:type="uml:CombinedFragment" href="perrot-tristan.uml#_UH1-MOXgEe2g08i1xpN1qw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UIDZkeXgEe2g08i1xpN1qw" x="94" y="195" width="541" height="161"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_BJGqAOXlEe2DIag9zYdMDQ" type="CombinedFragment_Shape">
+          <children xmi:type="notation:BasicCompartment" xmi:id="_BJJGQOXlEe2DIag9zYdMDQ" type="CombinedFragment_SubfragmentCompartment">
+            <children xmi:type="notation:Shape" xmi:id="_BJJGROXlEe2DIag9zYdMDQ" type="InteractionOperand_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_BJJGRuXlEe2DIag9zYdMDQ" type="InteractionOperand_Guard">
+                <element xmi:type="uml:InteractionConstraint" href="perrot-tristan.uml#_BIrzQOXlEe2DIag9zYdMDQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BJJGR-XlEe2DIag9zYdMDQ" x="5" y="5"/>
+              </children>
+              <element xmi:type="uml:InteractionOperand" href="perrot-tristan.uml#_BIrMMOXlEe2DIag9zYdMDQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BJJGReXlEe2DIag9zYdMDQ" width="521" height="47"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_DcwusOXlEe2DIag9zYdMDQ" type="InteractionOperand_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_DcwusuXlEe2DIag9zYdMDQ" type="InteractionOperand_Guard">
+                <element xmi:type="uml:InteractionConstraint" href="perrot-tristan.uml#_Dcfo8OXlEe2DIag9zYdMDQ"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dcwus-XlEe2DIag9zYdMDQ" x="5" y="5"/>
+              </children>
+              <element xmi:type="uml:InteractionOperand" href="perrot-tristan.uml#_DcdzwOXlEe2DIag9zYdMDQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DcwuseXlEe2DIag9zYdMDQ" y="47" width="521" height="54"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_BJJGQeXlEe2DIag9zYdMDQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_BJJGQuXlEe2DIag9zYdMDQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BJJGQ-XlEe2DIag9zYdMDQ"/>
+          </children>
+          <element xmi:type="uml:CombinedFragment" href="perrot-tristan.uml#_BIlsoOXlEe2DIag9zYdMDQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BJGqAeXlEe2DIag9zYdMDQ" x="94" y="535" width="521" height="121"/>
+        </children>
         <children xmi:type="notation:Shape" xmi:id="_-PQQoeU3Ee2fBK9yvp1XcA" type="Lifeline_Shape">
           <children xmi:type="notation:DecorationNode" xmi:id="_-PQQo-U3Ee2fBK9yvp1XcA" type="Lifeline_NameLabel"/>
           <element xmi:type="uml:Lifeline" href="perrot-tristan.uml#_-PQQoOU3Ee2fBK9yvp1XcA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-PQQouU3Ee2fBK9yvp1XcA" x="54" y="10" width="161" height="930"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-PQQouU3Ee2fBK9yvp1XcA" x="54" y="10" width="161" height="1011"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_P3bBMOU4Ee2fBK9yvp1XcA" type="Lifeline_Shape">
           <children xmi:type="notation:DecorationNode" xmi:id="_P3bBMuU4Ee2fBK9yvp1XcA" type="Lifeline_NameLabel"/>
@@ -1116,24 +1178,24 @@
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Zf5-ZeU4Ee2fBK9yvp1XcA" x="19" y="18"/>
             </children>
             <element xmi:type="uml:BehaviorExecutionSpecification" href="perrot-tristan.uml#_Zf5-YOU4Ee2fBK9yvp1XcA"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zf5-Y-U4Ee2fBK9yvp1XcA" x="79" y="84" width="20" height="181"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zf5-Y-U4Ee2fBK9yvp1XcA" x="79" y="84" width="20" height="221"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_FX1gFuU8Ee2fBK9yvp1XcA" type="BehaviorExecutionSpecification_Shape">
             <children xmi:type="notation:DecorationNode" xmi:id="_FX1gGOU8Ee2fBK9yvp1XcA" type="BehaviorExecutionSpecification_Behavior">
               <layoutConstraint xmi:type="notation:Location" xmi:id="_FX1gGeU8Ee2fBK9yvp1XcA" x="18" y="18"/>
             </children>
             <element xmi:type="uml:BehaviorExecutionSpecification" href="perrot-tristan.uml#_FX1gFOU8Ee2fBK9yvp1XcA"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FX1gF-U8Ee2fBK9yvp1XcA" x="79" y="385" width="20" height="140"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FX1gF-U8Ee2fBK9yvp1XcA" x="79" y="425" width="20" height="181"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_RftCEOVCEe2fBK9yvp1XcA" type="BehaviorExecutionSpecification_Shape">
             <children xmi:type="notation:DecorationNode" xmi:id="_RfuQMOVCEe2fBK9yvp1XcA" type="BehaviorExecutionSpecification_Behavior">
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Rfu3QOVCEe2fBK9yvp1XcA" x="18" y="18"/>
             </children>
             <element xmi:type="uml:BehaviorExecutionSpecification" href="perrot-tristan.uml#_Rfrz8OVCEe2fBK9yvp1XcA"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RftCEeVCEe2fBK9yvp1XcA" x="79" y="645" width="20" height="240"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RftCEeVCEe2fBK9yvp1XcA" x="79" y="685" width="20" height="220"/>
           </children>
           <element xmi:type="uml:Lifeline" href="perrot-tristan.uml#_P3UTgOU4Ee2fBK9yvp1XcA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P3bBMeU4Ee2fBK9yvp1XcA" x="474" y="10" width="178" height="930"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P3bBMeU4Ee2fBK9yvp1XcA" x="474" y="10" width="178" height="1011"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_n8gx4OU4Ee2fBK9yvp1XcA" type="Lifeline_Shape">
           <children xmi:type="notation:DecorationNode" xmi:id="_n8hY8OU4Ee2fBK9yvp1XcA" type="Lifeline_NameLabel"/>
@@ -1142,10 +1204,10 @@
               <layoutConstraint xmi:type="notation:Location" xmi:id="_ugwrkeVEEe2fBK9yvp1XcA" x="18" y="18"/>
             </children>
             <element xmi:type="uml:BehaviorExecutionSpecification" href="perrot-tristan.uml#_uguPUOVEEe2fBK9yvp1XcA"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ugwEgeVEEe2fBK9yvp1XcA" x="80" y="665" width="20" height="121"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ugwEgeVEEe2fBK9yvp1XcA" x="80" y="745" width="20" height="120"/>
           </children>
           <element xmi:type="uml:Lifeline" href="perrot-tristan.uml#_n8cgcOU4Ee2fBK9yvp1XcA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n8gx4eU4Ee2fBK9yvp1XcA" x="854" y="10" width="180" height="930"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n8gx4eU4Ee2fBK9yvp1XcA" x="854" y="10" width="180" height="1011"/>
         </children>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g3Y-xOU3Ee2fBK9yvp1XcA"/>
       </children>
@@ -1168,21 +1230,8 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_ZetrkeU4Ee2fBK9yvp1XcA"/>
       <element xmi:type="uml:Message" href="perrot-tristan.uml#_Zej6kOU4Ee2fBK9yvp1XcA"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZetrkuU4Ee2fBK9yvp1XcA" points="[0, 0, -229, 0]$[229, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZfmcYOU4Ee2fBK9yvp1XcA" id="(0.5,0.0913978494623656)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZfmcYeU4Ee2fBK9yvp1XcA" id="(0.5,0.0913978494623656)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_Zf5-aeU4Ee2fBK9yvp1XcA" type="Message_ReplyEdge" source="_P3bBMOU4Ee2fBK9yvp1XcA" target="_-PQQoeU3Ee2fBK9yvp1XcA">
-      <children xmi:type="notation:DecorationNode" xmi:id="_ZgDIUOU4Ee2fBK9yvp1XcA" type="Message_ReplyNameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZgDIUeU4Ee2fBK9yvp1XcA" x="1" y="-13"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_ZgDIUuU4Ee2fBK9yvp1XcA" type="Message_ReplyStereotypeLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZgDIU-U4Ee2fBK9yvp1XcA" x="1" y="-33"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_Zf5-auU4Ee2fBK9yvp1XcA"/>
-      <element xmi:type="uml:Message" href="perrot-tristan.uml#_Zf5-ZuU4Ee2fBK9yvp1XcA"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Zf5-a-U4Ee2fBK9yvp1XcA" points="[0, 0, 229, 0]$[-229, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZgGLoOU4Ee2fBK9yvp1XcA" id="(0.5,0.2849462365591398)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZgGLoeU4Ee2fBK9yvp1XcA" id="(0.5,0.2849462365591398)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZfmcYOU4Ee2fBK9yvp1XcA" id="(0.5,0.0840751730959446)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZfmcYeU4Ee2fBK9yvp1XcA" id="(0.5,0.0840751730959446)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_FXh-EOU8Ee2fBK9yvp1XcA" type="Message_SynchEdge" source="_-PQQoeU3Ee2fBK9yvp1XcA" target="_P3bBMOU4Ee2fBK9yvp1XcA">
       <children xmi:type="notation:DecorationNode" xmi:id="_FXh-E-U8Ee2fBK9yvp1XcA" type="Message_SynchNameLabel">
@@ -1194,21 +1243,8 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_FXh-EeU8Ee2fBK9yvp1XcA"/>
       <element xmi:type="uml:Message" href="perrot-tristan.uml#_FXY0IOU8Ee2fBK9yvp1XcA"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FXh-EuU8Ee2fBK9yvp1XcA" points="[0, 0, -269, 0]$[269, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FXrvEOU8Ee2fBK9yvp1XcA" id="(0.5,0.41397849462365593)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FXrvEeU8Ee2fBK9yvp1XcA" id="(0.5,0.41397849462365593)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_FX1gHeU8Ee2fBK9yvp1XcA" type="Message_ReplyEdge" source="_P3bBMOU4Ee2fBK9yvp1XcA" target="_-PQQoeU3Ee2fBK9yvp1XcA">
-      <children xmi:type="notation:DecorationNode" xmi:id="_FX1gIOU8Ee2fBK9yvp1XcA" type="Message_ReplyNameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_FX1gIeU8Ee2fBK9yvp1XcA" x="1" y="-13"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_FX1gIuU8Ee2fBK9yvp1XcA" type="Message_ReplyStereotypeLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_FX1gI-U8Ee2fBK9yvp1XcA" x="1" y="-33"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_FX1gHuU8Ee2fBK9yvp1XcA"/>
-      <element xmi:type="uml:Message" href="perrot-tristan.uml#_FX1gGuU8Ee2fBK9yvp1XcA"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FX1gH-U8Ee2fBK9yvp1XcA" points="[0, 0, 269, 0]$[-269, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FX-qAOU8Ee2fBK9yvp1XcA" id="(0.5,0.5645161290322581)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FX-qAeU8Ee2fBK9yvp1XcA" id="(0.5,0.5645161290322581)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FXrvEOU8Ee2fBK9yvp1XcA" id="(0.5,0.42037586547972305)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FXrvEeU8Ee2fBK9yvp1XcA" id="(0.5,0.42037586547972305)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_RfRkQOVCEe2fBK9yvp1XcA" type="Message_SynchEdge" source="_-PQQoeU3Ee2fBK9yvp1XcA" target="_P3bBMOU4Ee2fBK9yvp1XcA">
       <children xmi:type="notation:DecorationNode" xmi:id="_RfRkQ-VCEe2fBK9yvp1XcA" type="Message_SynchNameLabel">
@@ -1220,8 +1256,8 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_RfRkQeVCEe2fBK9yvp1XcA"/>
       <element xmi:type="uml:Message" href="perrot-tristan.uml#_RfHzQOVCEe2fBK9yvp1XcA"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RfRkQuVCEe2fBK9yvp1XcA" points="[0, 0, -269, 0]$[269, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RfiqAOVCEe2fBK9yvp1XcA" id="(0.5,0.6935483870967742)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RfjREOVCEe2fBK9yvp1XcA" id="(0.5,0.6935483870967742)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RfiqAOVCEe2fBK9yvp1XcA" id="(0.5,0.6775469831849654)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RfjREOVCEe2fBK9yvp1XcA" id="(0.5,0.6775469831849654)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_Rfx6kOVCEe2fBK9yvp1XcA" type="Message_ReplyEdge" source="_P3bBMOU4Ee2fBK9yvp1XcA" target="_-PQQoeU3Ee2fBK9yvp1XcA">
       <children xmi:type="notation:DecorationNode" xmi:id="_Rfx6k-VCEe2fBK9yvp1XcA" type="Message_ReplyNameLabel">
@@ -1233,8 +1269,8 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_Rfx6keVCEe2fBK9yvp1XcA"/>
       <element xmi:type="uml:Message" href="perrot-tristan.uml#_RfwFYOVCEe2fBK9yvp1XcA"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Rfx6kuVCEe2fBK9yvp1XcA" points="[0, 0, 269, 0]$[-269, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Rf2MAOVCEe2fBK9yvp1XcA" id="(0.5,0.9516129032258065)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Rf2zEOVCEe2fBK9yvp1XcA" id="(0.5,0.9516129032258065)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Rf2MAOVCEe2fBK9yvp1XcA" id="(0.5,0.8951533135509396)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Rf2zEOVCEe2fBK9yvp1XcA" id="(0.5,0.8951533135509396)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_tzC74OVCEe2fBK9yvp1XcA" type="Message_SynchEdge" source="_P3bBMOU4Ee2fBK9yvp1XcA" target="_P3bBMOU4Ee2fBK9yvp1XcA">
       <children xmi:type="notation:DecorationNode" xmi:id="_tzEKAeVCEe2fBK9yvp1XcA" type="Message_SynchNameLabel">
@@ -1246,12 +1282,12 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_tzC74eVCEe2fBK9yvp1XcA"/>
       <element xmi:type="uml:Message" href="perrot-tristan.uml#_ty8OMOVCEe2fBK9yvp1XcA"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tzEKAOVCEe2fBK9yvp1XcA" points="[-10, 0, -10, -60]$[-69, 0, -69, -60]$[-69, 60, -69, 0]$[-10, 60, -10, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tzWd4OVCEe2fBK9yvp1XcA" id="(0.5,0.13440860215053765)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tzWd4eVCEe2fBK9yvp1XcA" id="(0.5,0.1989247311827957)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tzWd4OVCEe2fBK9yvp1XcA" id="(0.5,0.12363996043521269)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tzWd4eVCEe2fBK9yvp1XcA" id="(0.5,0.1632047477744807)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_v_w1oOVDEe2fBK9yvp1XcA" type="Message_SynchEdge" source="_P3bBMOU4Ee2fBK9yvp1XcA" target="_P3bBMOU4Ee2fBK9yvp1XcA">
       <children xmi:type="notation:DecorationNode" xmi:id="_v_xcsOVDEe2fBK9yvp1XcA" type="Message_SynchNameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_v_xcseVDEe2fBK9yvp1XcA" x="8" y="111"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_v_xcseVDEe2fBK9yvp1XcA" x="-12" y="131"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_v_xcsuVDEe2fBK9yvp1XcA" type="Message_SynchStereotypeLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_v_xcs-VDEe2fBK9yvp1XcA" x="1" y="-33"/>
@@ -1259,8 +1295,8 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_v_w1oeVDEe2fBK9yvp1XcA"/>
       <element xmi:type="uml:Message" href="perrot-tristan.uml#_v_oSwOVDEe2fBK9yvp1XcA"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_v_w1ouVDEe2fBK9yvp1XcA" points="[-10, 0, -10, -160]$[-109, 0, -109, -160]$[-109, 160, -109, 0]$[0, 160, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v__fIOVDEe2fBK9yvp1XcA" id="(0.5,0.45698924731182794)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v__fIeVDEe2fBK9yvp1XcA" id="(0.5,0.5)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v__fIOVDEe2fBK9yvp1XcA" id="(0.5,0.4599406528189911)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v__fIeVDEe2fBK9yvp1XcA" id="(0.5,0.49950544015825915)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_ugXqAOVEEe2fBK9yvp1XcA" type="Message_SynchEdge" source="_P3bBMOU4Ee2fBK9yvp1XcA" target="_n8gx4OU4Ee2fBK9yvp1XcA">
       <children xmi:type="notation:DecorationNode" xmi:id="_ugXqA-VEEe2fBK9yvp1XcA" type="Message_SynchNameLabel">
@@ -1272,8 +1308,8 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_ugXqAeVEEe2fBK9yvp1XcA"/>
       <element xmi:type="uml:Message" href="perrot-tristan.uml#_ugQVQOVEEe2fBK9yvp1XcA"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ugXqAuVEEe2fBK9yvp1XcA" points="[-10, -7, -231, 120]$[221, -127, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ugmTgOVEEe2fBK9yvp1XcA" id="(0.5,0.7150537634408602)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ugm6kOVEEe2fBK9yvp1XcA" id="(0.5,0.7150537634408602)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ugmTgOVEEe2fBK9yvp1XcA" id="(0.5,0.7368941641938674)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ugm6kOVEEe2fBK9yvp1XcA" id="(0.5,0.7368941641938674)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_ugzH0OVEEe2fBK9yvp1XcA" type="Message_ReplyEdge" source="_n8gx4OU4Ee2fBK9yvp1XcA" target="_P3bBMOU4Ee2fBK9yvp1XcA">
       <children xmi:type="notation:DecorationNode" xmi:id="_ugzH0-VEEe2fBK9yvp1XcA" type="Message_ReplyNameLabel">
@@ -1285,34 +1321,60 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_ugzH0eVEEe2fBK9yvp1XcA"/>
       <element xmi:type="uml:Message" href="perrot-tristan.uml#_ugx5sOVEEe2fBK9yvp1XcA"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ugzH0uVEEe2fBK9yvp1XcA" points="[0, 0, 221, 0]$[-231, 0, -10, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ug1kEOVEEe2fBK9yvp1XcA" id="(0.5,0.8440860215053764)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ug1kEeVEEe2fBK9yvp1XcA" id="(0.5,0.8440860215053764)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ug1kEOVEEe2fBK9yvp1XcA" id="(0.5,0.8555885262116716)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ug1kEeVEEe2fBK9yvp1XcA" id="(0.5,0.8555885262116716)"/>
     </edges>
-  </notation:Diagram>
-  <notation:Diagram xmi:id="_VbUXgOVMEe2fBK9yvp1XcA" type="PapyrusUMLSequenceDiagram" name="ATM-Sequence-Diagram-WrongPin" measurementUnit="Pixel">
-    <children xmi:type="notation:Shape" xmi:id="_VbUXgeVMEe2fBK9yvp1XcA" type="Interaction_Shape">
-      <children xmi:type="notation:DecorationNode" xmi:id="_VbUXguVMEe2fBK9yvp1XcA" type="Interaction_NameLabel"/>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_VbUXg-VMEe2fBK9yvp1XcA" type="Interaction_SubfragmentCompartment">
-        <children xmi:type="notation:Shape" xmi:id="_g6E50OVMEe2fBK9yvp1XcA" type="Lifeline_Shape">
-          <children xmi:type="notation:DecorationNode" xmi:id="_g6E50uVMEe2fBK9yvp1XcA" type="Lifeline_NameLabel"/>
-          <element xmi:type="uml:Lifeline" href="perrot-tristan.uml#_g6DEoOVMEe2fBK9yvp1XcA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g6E50eVMEe2fBK9yvp1XcA" x="34" y="10" width="160"/>
-        </children>
-        <children xmi:type="notation:Shape" xmi:id="_kFOnMOVMEe2fBK9yvp1XcA" type="Lifeline_Shape">
-          <children xmi:type="notation:DecorationNode" xmi:id="_kFOnMuVMEe2fBK9yvp1XcA" type="Lifeline_NameLabel"/>
-          <element xmi:type="uml:Lifeline" href="perrot-tristan.uml#_kFMyAOVMEe2fBK9yvp1XcA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kFOnMeVMEe2fBK9yvp1XcA" x="294" y="10" width="121"/>
-        </children>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VbUXhOVMEe2fBK9yvp1XcA"/>
+    <edges xmi:type="notation:Connector" xmi:id="_vHOVwOXgEe2g08i1xpN1qw" type="Message_ReplyEdge" source="_P3bBMOU4Ee2fBK9yvp1XcA" target="_-PQQoeU3Ee2fBK9yvp1XcA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_vHOVw-XgEe2g08i1xpN1qw" type="Message_ReplyNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_vHOVxOXgEe2g08i1xpN1qw" x="1" y="-8"/>
       </children>
-      <element xmi:type="uml:Interaction" href="perrot-tristan.uml#_TWJawOVMEe2fBK9yvp1XcA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VbUXheVMEe2fBK9yvp1XcA"/>
-    </children>
-    <styles xmi:type="notation:StringValueStyle" xmi:id="_VbUXhuVMEe2fBK9yvp1XcA" name="diagram_compatibility_version" stringValue="1.4.0"/>
-    <styles xmi:type="notation:DiagramStyle" xmi:id="_VbUXh-VMEe2fBK9yvp1XcA"/>
-    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_VbUXiOVMEe2fBK9yvp1XcA" diagramKindId="org.eclipse.papyrus.uml.diagram.sequence">
-      <owner xmi:type="uml:Package" href="perrot-tristan.uml#_dk56UOU3Ee2fBK9yvp1XcA"/>
-    </styles>
-    <element xmi:type="uml:Interaction" href="perrot-tristan.uml#_TWJawOVMEe2fBK9yvp1XcA"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_vHOVxeXgEe2g08i1xpN1qw" type="Message_ReplyStereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_vHOVxuXgEe2g08i1xpN1qw" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_vHOVweXgEe2g08i1xpN1qw"/>
+      <element xmi:type="uml:Message" href="perrot-tristan.uml#_vHCIgOXgEe2g08i1xpN1qw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vHOVwuXgEe2g08i1xpN1qw" points="[12, -3, 548, -125]$[-536, 122, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vHrowOXgEe2g08i1xpN1qw" id="(0.5,0.22255192878338279)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vHsP0OXgEe2g08i1xpN1qw" id="(0.5,0.22255192878338279)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_8T2vIOXgEe2g08i1xpN1qw" type="Message_ReplyEdge" source="_P3bBMOU4Ee2fBK9yvp1XcA" target="_-PQQoeU3Ee2fBK9yvp1XcA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_8T2vI-XgEe2g08i1xpN1qw" type="Message_ReplyNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_8T2vJOXgEe2g08i1xpN1qw" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_8T2vJeXgEe2g08i1xpN1qw" type="Message_ReplyStereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_8T3WMOXgEe2g08i1xpN1qw" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_8T2vIeXgEe2g08i1xpN1qw"/>
+      <element xmi:type="uml:Message" href="perrot-tristan.uml#_8TsXEOXgEe2g08i1xpN1qw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8T2vIuXgEe2g08i1xpN1qw" points="[12, -7, 548, -175]$[-536, 168, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8UNUcOXgEe2g08i1xpN1qw" id="(0.5,0.3016815034619189)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8UNUceXgEe2g08i1xpN1qw" id="(0.5,0.3016815034619189)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_PUyFkOXlEe2DIag9zYdMDQ" type="Message_ReplyEdge" source="_P3bBMOU4Ee2fBK9yvp1XcA" target="_-PQQoeU3Ee2fBK9yvp1XcA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_PUysoOXlEe2DIag9zYdMDQ" type="Message_ReplyNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_PUysoeXlEe2DIag9zYdMDQ" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_PUysouXlEe2DIag9zYdMDQ" type="Message_ReplyStereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_PUyso-XlEe2DIag9zYdMDQ" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_PUyFkeXlEe2DIag9zYdMDQ"/>
+      <element xmi:type="uml:Message" href="perrot-tristan.uml#_PUg_0OXlEe2DIag9zYdMDQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PUyFkuXlEe2DIag9zYdMDQ" points="[-10, -1, 419, -40]$[-429, 39, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PVepIOXlEe2DIag9zYdMDQ" id="(0.5,0.5588526211671613)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PVfQMOXlEe2DIag9zYdMDQ" id="(0.5,0.5588526211671613)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_7xKfgOXlEe2DIag9zYdMDQ" type="Message_ReplyEdge" source="_P3bBMOU4Ee2fBK9yvp1XcA" target="_-PQQoeU3Ee2fBK9yvp1XcA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_7xKfg-XlEe2DIag9zYdMDQ" type="Message_ReplyNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_7xLGkOXlEe2DIag9zYdMDQ" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_7xLGkeXlEe2DIag9zYdMDQ" type="Message_ReplyStereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_7xLGkuXlEe2DIag9zYdMDQ" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_7xKfgeXlEe2DIag9zYdMDQ"/>
+      <element xmi:type="uml:Message" href="perrot-tristan.uml#_7w4ysOXlEe2DIag9zYdMDQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7xKfguXlEe2DIag9zYdMDQ" points="[-10, -4, 419, -60]$[-429, 56, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7xoZkOXlEe2DIag9zYdMDQ" id="(0.5,0.5984174085064293)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7xoZkeXlEe2DIag9zYdMDQ" id="(0.5,0.5984174085064293)"/>
+    </edges>
   </notation:Diagram>
 </xmi:XMI>

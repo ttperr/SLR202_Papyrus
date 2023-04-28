@@ -60,6 +60,14 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_hAJ24OQ_Ee2hBOEMZEgbLg" name="ATM Classes">
         <packagedElement xmi:type="uml:Class" xmi:id="_3GgQQNYYEe2kktxydelO0w" name="ATM">
+          <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_WWUA4OXgEe2g08i1xpN1qw" name="validCard" constrainedElement="_Wc-X4uVDEe2fBK9yvp1XcA">
+            <specification xmi:type="uml:LiteralBoolean" xmi:id="_iU7vAOXgEe2g08i1xpN1qw" name="isProperCard" value="true"/>
+          </ownedRule>
+          <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_UH2lQeXgEe2g08i1xpN1qw" name="invalidCard" constrainedElement="_Wc-X4uVDEe2fBK9yvp1XcA">
+            <specification xmi:type="uml:LiteralBoolean" xmi:id="_gIo2kOXgEe2g08i1xpN1qw" name="isProperCard">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </specification>
+          </ownedRule>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ElsOQOU4Ee2fBK9yvp1XcA" name="cardHolder" visibility="private" type="_4ZpTINYYEe2kktxydelO0w"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_syhvgOVBEe2fBK9yvp1XcA" name="cardData" visibility="private" type="_SQdCQOSBEe2F6M0fPxiN5A"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_5D1fMOU4Ee2fBK9yvp1XcA" name="authSystem" visibility="private" type="_9qOb8NYYEe2kktxydelO0w"/>
@@ -97,6 +105,9 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_4ZpTINYYEe2kktxydelO0w" name="CardHolder">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_V_UMgOU4Ee2fBK9yvp1XcA" name="atm" visibility="private" type="_3GgQQNYYEe2kktxydelO0w"/>
           <nestedClassifier xmi:type="uml:Signal" xmi:id="_pThugOVAEe2fBK9yvp1XcA" name="requestPinCode"/>
+          <nestedClassifier xmi:type="uml:Signal" xmi:id="_B3Mb4OXhEe2g08i1xpN1qw" name="invalidCard"/>
+          <nestedClassifier xmi:type="uml:Signal" xmi:id="_YVa_oOXlEe2DIag9zYdMDQ" name="pinOk"/>
+          <nestedClassifier xmi:type="uml:Signal" xmi:id="_Em5KEOXmEe2DIag9zYdMDQ" name="retryPin"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_8gRKQNYYEe2kktxydelO0w" name="BankingCard"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_9qOb8NYYEe2kktxydelO0w" name="AuthSystem">
@@ -312,23 +323,47 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_dk56UOU3Ee2fBK9yvp1XcA" name="Sequence">
       <packagedElement xmi:type="uml:Interaction" xmi:id="_fTQSgOU3Ee2fBK9yvp1XcA" name="Nominal Scenario">
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_-PQQoOU3Ee2fBK9yvp1XcA" name="cardHolder" represents="_ElsOQOU4Ee2fBK9yvp1XcA" coveredBy="_Zej6keU4Ee2fBK9yvp1XcA _Zf5-aOU4Ee2fBK9yvp1XcA _FXY0IeU8Ee2fBK9yvp1XcA _FX1gHOU8Ee2fBK9yvp1XcA _RfJBYOVCEe2fBK9yvp1XcA _RfxTgOVCEe2fBK9yvp1XcA"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_P3UTgOU4Ee2fBK9yvp1XcA" name="atm" represents="_V_UMgOU4Ee2fBK9yvp1XcA" coveredBy="_Zej6kuU4Ee2fBK9yvp1XcA _ty81QOVCEe2fBK9yvp1XcA _ty9cUOVCEe2fBK9yvp1XcA _Zf5-Z-U4Ee2fBK9yvp1XcA _FXY0IuU8Ee2fBK9yvp1XcA _v_pg4OVDEe2fBK9yvp1XcA _v_qH8OVDEe2fBK9yvp1XcA _FX1gG-U8Ee2fBK9yvp1XcA _RfJocOVCEe2fBK9yvp1XcA _ugSKcOVEEe2fBK9yvp1XcA _ugygweVEEe2fBK9yvp1XcA _RfwscOVCEe2fBK9yvp1XcA _Zf5-YOU4Ee2fBK9yvp1XcA _FX1gFOU8Ee2fBK9yvp1XcA _Rfrz8OVCEe2fBK9yvp1XcA"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_-PQQoOU3Ee2fBK9yvp1XcA" name="cardHolder" represents="_ElsOQOU4Ee2fBK9yvp1XcA" coveredBy="_Zej6keU4Ee2fBK9yvp1XcA _UH1-MOXgEe2g08i1xpN1qw _WWSywOXgEe2g08i1xpN1qw _vHD9seXgEe2g08i1xpN1qw _UH2lQOXgEe2g08i1xpN1qw _8TtlMeXgEe2g08i1xpN1qw _FXY0IeU8Ee2fBK9yvp1XcA _BIlsoOXlEe2DIag9zYdMDQ _BIrMMOXlEe2DIag9zYdMDQ _PUjcEeXlEe2DIag9zYdMDQ _DcdzwOXlEe2DIag9zYdMDQ _7w6A0OXlEe2DIag9zYdMDQ _RfJBYOVCEe2fBK9yvp1XcA _RfxTgOVCEe2fBK9yvp1XcA"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_P3UTgOU4Ee2fBK9yvp1XcA" name="atm" represents="_V_UMgOU4Ee2fBK9yvp1XcA" coveredBy="_Zej6kuU4Ee2fBK9yvp1XcA _ty81QOVCEe2fBK9yvp1XcA _ty9cUOVCEe2fBK9yvp1XcA _UH1-MOXgEe2g08i1xpN1qw _WWSywOXgEe2g08i1xpN1qw _vHD9sOXgEe2g08i1xpN1qw _UH2lQOXgEe2g08i1xpN1qw _8TtlMOXgEe2g08i1xpN1qw _Zf5-Z-U4Ee2fBK9yvp1XcA _FXY0IuU8Ee2fBK9yvp1XcA _v_pg4OVDEe2fBK9yvp1XcA _v_qH8OVDEe2fBK9yvp1XcA _BIlsoOXlEe2DIag9zYdMDQ _BIrMMOXlEe2DIag9zYdMDQ _PUjcEOXlEe2DIag9zYdMDQ _DcdzwOXlEe2DIag9zYdMDQ _FX1gG-U8Ee2fBK9yvp1XcA _7w5ZwOXlEe2DIag9zYdMDQ _RfJocOVCEe2fBK9yvp1XcA _ugSKcOVEEe2fBK9yvp1XcA _ugygweVEEe2fBK9yvp1XcA _RfwscOVCEe2fBK9yvp1XcA _Zf5-YOU4Ee2fBK9yvp1XcA _FX1gFOU8Ee2fBK9yvp1XcA _Rfrz8OVCEe2fBK9yvp1XcA"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_n8cgcOU4Ee2fBK9yvp1XcA" name="authSystem" represents="_5D1fMOU4Ee2fBK9yvp1XcA" coveredBy="_ugSKceVEEe2fBK9yvp1XcA _ugygwOVEEe2fBK9yvp1XcA _uguPUOVEEe2fBK9yvp1XcA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Zej6keU4Ee2fBK9yvp1XcA" name="Message3SendEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_Zej6kOU4Ee2fBK9yvp1XcA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Zej6kuU4Ee2fBK9yvp1XcA" name="Message3ReceiveEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_Zej6kOU4Ee2fBK9yvp1XcA"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Zf5-YOU4Ee2fBK9yvp1XcA" name="checkProperCard" covered="_P3UTgOU4Ee2fBK9yvp1XcA" finish="_Zf5-Z-U4Ee2fBK9yvp1XcA" start="_Zej6kuU4Ee2fBK9yvp1XcA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ty81QOVCEe2fBK9yvp1XcA" name="Message25SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_ty8OMOVCEe2fBK9yvp1XcA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ty9cUOVCEe2fBK9yvp1XcA" name="Message25ReceiveEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_ty8OMOVCEe2fBK9yvp1XcA"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Zf5-Z-U4Ee2fBK9yvp1XcA" name="Message8SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_Zf5-ZuU4Ee2fBK9yvp1XcA"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Zf5-aOU4Ee2fBK9yvp1XcA" name="Message8ReceiveEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_Zf5-ZuU4Ee2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_UH1-MOXgEe2g08i1xpN1qw" name="valideCardOrNot" covered="_-PQQoOU3Ee2fBK9yvp1XcA _P3UTgOU4Ee2fBK9yvp1XcA" interactionOperator="alt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_WWSywOXgEe2g08i1xpN1qw" name="validCard" covered="_-PQQoOU3Ee2fBK9yvp1XcA _P3UTgOU4Ee2fBK9yvp1XcA">
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_vHD9seXgEe2g08i1xpN1qw" name="Message37ReceiveEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_vHCIgOXgEe2g08i1xpN1qw"/>
+          </operand>
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_UH2lQOXgEe2g08i1xpN1qw" name="invalidCard" covered="_-PQQoOU3Ee2fBK9yvp1XcA _P3UTgOU4Ee2fBK9yvp1XcA">
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8TtlMeXgEe2g08i1xpN1qw" name="Message39ReceiveEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_8TsXEOXgEe2g08i1xpN1qw"/>
+          </operand>
+        </fragment>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_vHD9sOXgEe2g08i1xpN1qw" name="Message37SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_vHCIgOXgEe2g08i1xpN1qw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8TtlMOXgEe2g08i1xpN1qw" name="Message39SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_8TsXEOXgEe2g08i1xpN1qw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Zf5-Z-U4Ee2fBK9yvp1XcA" name="Message8SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FXY0IeU8Ee2fBK9yvp1XcA" name="Message18SendEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_FXY0IOU8Ee2fBK9yvp1XcA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FXY0IuU8Ee2fBK9yvp1XcA" name="Message18ReceiveEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_FXY0IOU8Ee2fBK9yvp1XcA"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_FX1gFOU8Ee2fBK9yvp1XcA" name="BehaviorExecutionSpecification21" covered="_P3UTgOU4Ee2fBK9yvp1XcA" finish="_FX1gG-U8Ee2fBK9yvp1XcA" start="_FXY0IuU8Ee2fBK9yvp1XcA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_v_pg4OVDEe2fBK9yvp1XcA" name="Message28SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_v_oSwOVDEe2fBK9yvp1XcA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_v_qH8OVDEe2fBK9yvp1XcA" name="Message28ReceiveEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_v_oSwOVDEe2fBK9yvp1XcA"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FX1gG-U8Ee2fBK9yvp1XcA" name="Message23SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_FX1gGuU8Ee2fBK9yvp1XcA"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FX1gHOU8Ee2fBK9yvp1XcA" name="Message23ReceiveEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_FX1gGuU8Ee2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_BIlsoOXlEe2DIag9zYdMDQ" name="pinOk" covered="_-PQQoOU3Ee2fBK9yvp1XcA _P3UTgOU4Ee2fBK9yvp1XcA" interactionOperator="alt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_BIrMMOXlEe2DIag9zYdMDQ" name="InteractionOperand0" covered="_-PQQoOU3Ee2fBK9yvp1XcA _P3UTgOU4Ee2fBK9yvp1XcA">
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_PUjcEeXlEe2DIag9zYdMDQ" name="Message41ReceiveEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_PUg_0OXlEe2DIag9zYdMDQ"/>
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_BIrzQOXlEe2DIag9zYdMDQ" name="pinOk" constrainedElement="_8Yfs4uVDEe2fBK9yvp1XcA">
+              <specification xmi:type="uml:LiteralBoolean" xmi:id="_tUNGsOXlEe2DIag9zYdMDQ" name="pinOk" value="true"/>
+            </guard>
+          </operand>
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_DcdzwOXlEe2DIag9zYdMDQ" name="InteractionOperand2" covered="_-PQQoOU3Ee2fBK9yvp1XcA _P3UTgOU4Ee2fBK9yvp1XcA">
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7w6A0OXlEe2DIag9zYdMDQ" name="Message43ReceiveEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_7w4ysOXlEe2DIag9zYdMDQ"/>
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_Dcfo8OXlEe2DIag9zYdMDQ" name="pinNotOk" constrainedElement="_8Yfs4uVDEe2fBK9yvp1XcA">
+              <specification xmi:type="uml:LiteralBoolean" xmi:id="_LNBJgOXmEe2DIag9zYdMDQ" name="pinOk"/>
+            </guard>
+          </operand>
+        </fragment>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_PUjcEOXlEe2DIag9zYdMDQ" name="Message41SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_PUg_0OXlEe2DIag9zYdMDQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FX1gG-U8Ee2fBK9yvp1XcA" name="Message23SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7w5ZwOXlEe2DIag9zYdMDQ" name="Message43SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_7w4ysOXlEe2DIag9zYdMDQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RfJBYOVCEe2fBK9yvp1XcA" name="Message18SendEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_RfHzQOVCEe2fBK9yvp1XcA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RfJocOVCEe2fBK9yvp1XcA" name="Message18ReceiveEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_RfHzQOVCEe2fBK9yvp1XcA"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Rfrz8OVCEe2fBK9yvp1XcA" name="BehaviorExecutionSpecification21" covered="_P3UTgOU4Ee2fBK9yvp1XcA" finish="_RfwscOVCEe2fBK9yvp1XcA" start="_RfJocOVCEe2fBK9yvp1XcA"/>
@@ -340,15 +375,17 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RfwscOVCEe2fBK9yvp1XcA" name="Message23SendEvent" covered="_P3UTgOU4Ee2fBK9yvp1XcA" message="_RfwFYOVCEe2fBK9yvp1XcA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RfxTgOVCEe2fBK9yvp1XcA" name="Message23ReceiveEvent" covered="_-PQQoOU3Ee2fBK9yvp1XcA" message="_RfwFYOVCEe2fBK9yvp1XcA"/>
         <message xmi:type="uml:Message" xmi:id="_Zej6kOU4Ee2fBK9yvp1XcA" name="insertCard" receiveEvent="_Zej6kuU4Ee2fBK9yvp1XcA" sendEvent="_Zej6keU4Ee2fBK9yvp1XcA" signature="_H6bgAOU5Ee2fBK9yvp1XcA"/>
-        <message xmi:type="uml:Message" xmi:id="_Zf5-ZuU4Ee2fBK9yvp1XcA" name="requestPinCode" messageSort="reply" receiveEvent="_Zf5-aOU4Ee2fBK9yvp1XcA" sendEvent="_Zf5-Z-U4Ee2fBK9yvp1XcA" signature="_pThugOVAEe2fBK9yvp1XcA"/>
         <message xmi:type="uml:Message" xmi:id="_FXY0IOU8Ee2fBK9yvp1XcA" name="enterPinCode" receiveEvent="_FXY0IuU8Ee2fBK9yvp1XcA" sendEvent="_FXY0IeU8Ee2fBK9yvp1XcA" signature="_KmHQ4OU-Ee2fBK9yvp1XcA"/>
-        <message xmi:type="uml:Message" xmi:id="_FX1gGuU8Ee2fBK9yvp1XcA" name="pinOk" messageSort="reply" receiveEvent="_FX1gHOU8Ee2fBK9yvp1XcA" sendEvent="_FX1gG-U8Ee2fBK9yvp1XcA"/>
         <message xmi:type="uml:Message" xmi:id="_RfHzQOVCEe2fBK9yvp1XcA" name="amountRequest" receiveEvent="_RfJocOVCEe2fBK9yvp1XcA" sendEvent="_RfJBYOVCEe2fBK9yvp1XcA" signature="_draxAOVCEe2fBK9yvp1XcA"/>
         <message xmi:type="uml:Message" xmi:id="_RfwFYOVCEe2fBK9yvp1XcA" name="transactionOk" messageSort="reply" receiveEvent="_RfxTgOVCEe2fBK9yvp1XcA" sendEvent="_RfwscOVCEe2fBK9yvp1XcA"/>
         <message xmi:type="uml:Message" xmi:id="_ty8OMOVCEe2fBK9yvp1XcA" name="checkProperCard" receiveEvent="_ty9cUOVCEe2fBK9yvp1XcA" sendEvent="_ty81QOVCEe2fBK9yvp1XcA" signature="_Wc-X4OVDEe2fBK9yvp1XcA"/>
         <message xmi:type="uml:Message" xmi:id="_v_oSwOVDEe2fBK9yvp1XcA" name="checkPinCode" receiveEvent="_v_qH8OVDEe2fBK9yvp1XcA" sendEvent="_v_pg4OVDEe2fBK9yvp1XcA" signature="_8Yfs4OVDEe2fBK9yvp1XcA"/>
         <message xmi:type="uml:Message" xmi:id="_ugQVQOVEEe2fBK9yvp1XcA" name="isAuthorized" receiveEvent="_ugSKceVEEe2fBK9yvp1XcA" sendEvent="_ugSKcOVEEe2fBK9yvp1XcA" signature="_EHC3gOVFEe2fBK9yvp1XcA"/>
         <message xmi:type="uml:Message" xmi:id="_ugx5sOVEEe2fBK9yvp1XcA" name="isAuthorized" messageSort="reply" receiveEvent="_ugygweVEEe2fBK9yvp1XcA" sendEvent="_ugygwOVEEe2fBK9yvp1XcA"/>
+        <message xmi:type="uml:Message" xmi:id="_vHCIgOXgEe2g08i1xpN1qw" name="requestPinCode" messageSort="reply" receiveEvent="_vHD9seXgEe2g08i1xpN1qw" sendEvent="_vHD9sOXgEe2g08i1xpN1qw" signature="_pThugOVAEe2fBK9yvp1XcA"/>
+        <message xmi:type="uml:Message" xmi:id="_8TsXEOXgEe2g08i1xpN1qw" name="Message39" messageSort="reply" receiveEvent="_8TtlMeXgEe2g08i1xpN1qw" sendEvent="_8TtlMOXgEe2g08i1xpN1qw" signature="_B3Mb4OXhEe2g08i1xpN1qw"/>
+        <message xmi:type="uml:Message" xmi:id="_PUg_0OXlEe2DIag9zYdMDQ" name="pinOk" messageSort="reply" receiveEvent="_PUjcEeXlEe2DIag9zYdMDQ" sendEvent="_PUjcEOXlEe2DIag9zYdMDQ" signature="_YVa_oOXlEe2DIag9zYdMDQ"/>
+        <message xmi:type="uml:Message" xmi:id="_7w4ysOXlEe2DIag9zYdMDQ" name="retryPin" messageSort="reply" receiveEvent="_7w6A0OXlEe2DIag9zYdMDQ" sendEvent="_7w5ZwOXlEe2DIag9zYdMDQ" signature="_Em5KEOXmEe2DIag9zYdMDQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Interaction" xmi:id="_TWJawOVMEe2fBK9yvp1XcA" name="WrongPin">
         <lifeline xmi:type="uml:Lifeline" xmi:id="_g6DEoOVMEe2fBK9yvp1XcA" name="cardHolder" represents="_ElsOQOU4Ee2fBK9yvp1XcA"/>
